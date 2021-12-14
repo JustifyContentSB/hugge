@@ -1,0 +1,51 @@
+.header
+    padding-top: 30px
+    padding-bottom: 30px
+    position: relative
+    &__left
+        position: absolute
+        top: 0
+        left: 0
+    &__right
+        position: absolute
+        top: 0
+        right: 0
+    &__inner
+        display: flex
+        flex-direction: column
+        align-items: center
+        position: relative
+        z-index: 10
+    &__star
+        &-1
+            top: 35%
+            left: 22%
+        &-2
+            top: 17%
+            right: 20%
+    &__nav
+        margin-bottom: 80px
+    &__list
+        display: flex
+        justify-content: center
+        grid-gap: 26px
+        font-weight: bold
+        font-size: 18px
+        line-height: 21px
+        color: var(--textColor)
+        font-family: 'Roboto Condensed'
+    &__link
+        &--active
+            color: var(--titleColor)
+    &__mts
+        margin-bottom: 50px
+    &__logo
+        margin-bottom: 25px
+        margin-left: 42px
+    &__text
+        width: 100%
+        max-width: 700px
+        font-weight: 500
+        font-size: 18px
+        line-height: 179.69%
+        text-align: center

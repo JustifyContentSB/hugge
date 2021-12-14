@@ -1,0 +1,132 @@
+extends base/_layout
+block head
+    title Main
+block page
+    header.header
+        .header__left
+            picture
+                source(srcset="images/header/header-left.webp" type="image/webp")
+                img(src="images/header/header-left.png" alt="подарки" width="651" height="1092")
+        .header__right
+            picture
+                source(srcset="images/header/header-right.webp" type="image/webp")
+                img(src="images/header/header-right.png" alt="подарки" width="654" height="1041")
+        .header__inner.container
+            .star.header__star.header__star-1
+                img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="61" height="70")
+                img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+            .star.header__star.header__star-2
+                img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="61" height="70")
+                img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+            nav.header__nav
+                ul.header__list
+                    li
+                        a.header__link.header__link--active(href="#") Адвент-календарь
+                    li
+                        a.header__link(href="#") Галерея работ
+                    li
+                        a.header__link(href="#") 100к1
+                    li
+                        a.header__link(href="#") Подборка настроения
+                    li
+                        a.header__link(href="#") Трансляция 
+            a.header__mts(href="#")
+                img(src="images/icons/mts.svg", alt="мтс" width="206" height="51")
+            a.header__logo(href="#")
+                img(src="images/icons/hugge.svg", alt="хюгге" width="481" height="271")
+            p.header__text.
+                Хюгге – это скандинавское понятие, которое означает создание теплой атмосферы и умение наслаждаться тем малым и прекрасным, что есть рядом. Хюгге и Новый год идеально совместимы. Ведь в основе этих двух вещей лежат простота и уют, где нет места суматохе и спешке. #[br] Мы день за днём будем создавать свой уникальный рецепт Хюгге.
+
+    main.main
+        section.clock
+            .clock__inner.container
+                .clock__top
+                    .star.clock__star-big
+                        img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="122" height="140")
+                        img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="122" height="140")
+                    .star.clock__star-small
+                        img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="42" height="48")
+                        img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="42" height="48")
+                    .star.clock__star-down
+                        img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="90" height="103")
+                        img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="90" height="103")
+                    .clock__time
+                        img.clock__img(src="images/clock/clock.svg", alt="часы" width="590" height="590")
+                        p.clock__days 12 Дней
+                    .clock__info
+                        h2.clock__title.title календарь
+                        p.clock__text.
+                            За 12 дней до Нового 2022 года все смогут найти своё Хюгге и познать искусство быть счастливым. Каждый день уходящего года в праздничном календаре МТС будет волшебным! Вас ждут сюрпризы 
+                            и развлечения, самые веселые мастер-классы с неожиданными участниками, душевные подарки и многое другое.
+                .clock__list
+                    .clock__swiper.swiper-container
+                        .clock__wrapper.swiper-wrapper 
+                            .clock__item.clock__item--active.swiper-slide
+                                img.clock__item-img(src="images/clock/day-active.svg", alt="день")
+                                p.clock__item-day 20
+                            .clock__item.swiper-slide
+                                img.clock__item-img(src="images/clock/day.svg", alt="день")
+                                p.clock__item-day 21
+                            .clock__item.swiper-slide
+                                img.clock__item-img(src="images/clock/day.svg", alt="день")
+                                p.clock__item-day 22
+                            .clock__item.swiper-slide
+                                img.clock__item-img(src="images/clock/day.svg", alt="день")
+                                p.clock__item-day 23
+                            .clock__item.swiper-slide
+                                img.clock__item-img(src="images/clock/day.svg", alt="день")
+                                p.clock__item-day 24
+                            .clock__item.swiper-slide
+                                img.clock__item-img(src="images/clock/day.svg", alt="день")
+                                p.clock__item-day 25
+                            .clock__item.swiper-slide
+                                img.clock__item-img(src="images/clock/day.svg", alt="день")
+                                p.clock__item-day 26
+                            .clock__item.swiper-slide
+                                img.clock__item-img(src="images/clock/day.svg", alt="день")
+                                p.clock__item-day 27
+                            .clock__item.swiper-slide
+                                img.clock__item-img(src="images/clock/day.svg", alt="день")
+                                p.clock__item-day 28
+                            .clock__item.swiper-slide
+                                img.clock__item-img(src="images/clock/day.svg", alt="день")
+                                p.clock__item-day 29
+                            .clock__item.swiper-slide
+                                img.clock__item-img(src="images/clock/day.svg", alt="день")
+                                p.clock__item-day 30
+                            .clock__item.swiper-slide
+                                img.clock__item-img(src="images/clock/day.svg", alt="день")
+                                p.clock__item-day 31
+                
+        section.photo
+            .photo__inner.container
+                .star.photo__star-1
+                    img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="104" height="119")
+                    img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="104" height="119")
+                .star.photo__star-2
+                    img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="70" height="81")
+                    img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="70" height="81")
+                .star.photo__star-3
+                    img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="42" height="48")
+                    img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="42" height="48")
+                .photo__send
+                    h2.photo__title.title Присылайте фото
+                    p.photo__text.
+                        Повторяйте идеи МТС, предлагайте свои. Самые оригинальные фотоидеи будут отмечены комплиментом от компании.
+                .photo__download
+                    img.photo__img(src="images/photo/photo-img.png", alt="картинка" width="589" height="391")
+                    label.photo__field
+                        input(type="file")
+                        span.photo__field-title Загрузить
+
+        .gifts
+            .star.gifts__star-1
+                img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="128" height="147")
+                img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="128" height="147")
+            .star.gifts__star-2
+                img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="42" height="48")
+                img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="42" height="48")
+            .gifts__img
+                picture
+                    source(srcset="images/gifts/gifts.webp" type="image/webp")
+                    img(src="images/gifts/gifts.png" alt="подарки" width="1920" height="330")

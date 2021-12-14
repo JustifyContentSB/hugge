@@ -1,0 +1,23 @@
+.title
+   font-family: var(--journalism)
+   font-weight: normal
+   font-size: 72px
+   line-height: 100%
+   color: var(--titleColor)
+
+.star
+   position: absolute
+   animation-name: starsRotate
+   animation-duration: 10.5s
+   animation-iteration-count: infinite
+   animation-timing-function: linear
+   &__gold
+      animation-name: starsFlashing
+      animation-duration: 6s
+      animation-iteration-count: infinite
+      animation-timing-function: linear
+   &__blue
+      position: absolute
+      z-index: -1
+      left: 0
+      top: 0

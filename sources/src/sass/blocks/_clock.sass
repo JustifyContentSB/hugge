@@ -1,0 +1,71 @@
+.clock
+   margin-bottom: 186px
+   &__top
+      margin-bottom: 40px
+      display: flex
+      justify-content: space-between
+      align-items: flex-end
+      position: relative
+   &__star
+      &-big
+         top: 8%
+         left: 48%
+      &-small
+         right: 30%
+         top: 30%
+      &-down
+         bottom: -60px
+         right: -5%
+   &__time
+      min-width: 590px
+      width: 590px
+      height: 590px
+      position: relative
+   &__days
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      font-weight: normal
+      font-size: 116px
+      line-height: 100%
+      text-align: center
+      color: var(--titleColor)
+      white-space: nowrap
+      font-family: var(--journalism)
+   &__info
+      width: 100%
+      max-width: 530px
+      margin-bottom: 40px
+   &__title
+      margin-bottom: 25px
+   &__text
+      line-height: 180%
+   &__wrapper
+      flex-wrap: wrap
+      grid-gap: 17px 20px
+   &__item
+      width: 305px
+      min-width: 305px
+      height: 304px
+      padding: 17px
+      font-family: var(--journalism)
+      text-transform: uppercase
+      font-weight: normal
+      font-size: 96px
+      line-height: 100%
+      color: var(--accent)
+      position: relative
+      &--active
+         color: var(--titleColor)
+      &-img
+         display: block
+         width: 100%
+         height: 100%
+      &-day
+         position: absolute
+         z-index: 10
+         left: 50%
+         top: 50%
+         transform: translate(-50%, -50%)
+         white-space: nowrap
