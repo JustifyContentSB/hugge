@@ -26,17 +26,21 @@
     <header class="header">
       <div class="header__left">
         <picture>
+          <source srcset="images/header/header-left-mob.webp" media="(max-width: 500px)" type="image/webp">
+          <source srcset="images/header/header-left-mob.png" media="(max-width: 500px)" type="image/png">
           <source srcset="images/header/header-left.webp" type="image/webp"><img src="images/header/header-left.png" alt="подарки" width="651" height="1092">
         </picture>
       </div>
       <div class="header__right">
         <picture>
+          <source srcset="images/header/header-right-mob.webp" media="(max-width: 500px)" type="image/webp">
+          <source srcset="images/header/header-right-mob.png" media="(max-width: 500px)" type="image/png">
           <source srcset="images/header/header-right.webp" type="image/webp"><img src="images/header/header-right.png" alt="подарки" width="654" height="1041">
         </picture>
       </div>
       <div class="header__inner container">
         <div class="star header__star header__star-1"><img class="star__gold" src="images/stars/star-gold.svg" alt="звездочка" width="61" height="70"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
-        <div class="star header__star header__star-2"><img class="star__gold" src="images/stars/star-gold.svg" alt="звездочка" width="61" height="70"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+        <div class="star header__star header__star-2"><img class="star__gold" src="images/stars/star-gold.svg" alt="звездочка" width="61" height="70"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div><a class="header__burger" href="#"><span></span><span></span><span></span></a>
         <nav class="header__nav">
           <ul class="header__list">
             <li><a class="header__link header__link--active" href="#">Адвент-календарь</a></li>
@@ -70,45 +74,48 @@
             </div>
           </div>
           <div class="clock__list">
-            <div class="clock__swiper swiper-container">
-              <div class="clock__wrapper swiper-wrapper"> 
-                <div class="clock__item clock__item--active swiper-slide"><img class="clock__item-img" src="images/clock/day-active.svg" alt="день">
-                  <p class="clock__item-day">20</p>
-                </div>
-                <div class="clock__item swiper-slide"><img class="clock__item-img" src="images/clock/day.svg" alt="день">
-                  <p class="clock__item-day">21</p>
-                </div>
-                <div class="clock__item swiper-slide"><img class="clock__item-img" src="images/clock/day.svg" alt="день">
-                  <p class="clock__item-day">22</p>
-                </div>
-                <div class="clock__item swiper-slide"><img class="clock__item-img" src="images/clock/day.svg" alt="день">
-                  <p class="clock__item-day">23</p>
-                </div>
-                <div class="clock__item swiper-slide"><img class="clock__item-img" src="images/clock/day.svg" alt="день">
-                  <p class="clock__item-day">24</p>
-                </div>
-                <div class="clock__item swiper-slide"><img class="clock__item-img" src="images/clock/day.svg" alt="день">
-                  <p class="clock__item-day">25</p>
-                </div>
-                <div class="clock__item swiper-slide"><img class="clock__item-img" src="images/clock/day.svg" alt="день">
-                  <p class="clock__item-day">26</p>
-                </div>
-                <div class="clock__item swiper-slide"><img class="clock__item-img" src="images/clock/day.svg" alt="день">
-                  <p class="clock__item-day">27</p>
-                </div>
-                <div class="clock__item swiper-slide"><img class="clock__item-img" src="images/clock/day.svg" alt="день">
-                  <p class="clock__item-day">28</p>
-                </div>
-                <div class="clock__item swiper-slide"><img class="clock__item-img" src="images/clock/day.svg" alt="день">
-                  <p class="clock__item-day">29</p>
-                </div>
-                <div class="clock__item swiper-slide"><img class="clock__item-img" src="images/clock/day.svg" alt="день">
-                  <p class="clock__item-day">30</p>
-                </div>
-                <div class="clock__item swiper-slide"><img class="clock__item-img" src="images/clock/day.svg" alt="день">
-                  <p class="clock__item-day">31</p>
+            <div class="clock__list-inner">
+              <div class="clock__swiper swiper-container">
+                <div class="clock__wrapper swiper-wrapper"> 
+                  <div class="clock__item clock__item--active swiper-slide"><img class="clock__item-img" src="images/clock/day-active.svg" alt="день" width="270" height="265"><img class="clock__item-dots" src="images/clock/dots-active.svg" alt="точки" width="252" height="265">
+                    <p class="clock__item-day">20</p>
+                  </div>
+                  <div class="clock__item swiper-slide"><img class="clock__item-img" src="images/clock/day.svg" alt="день" width="270" height="265"><img class="clock__item-dots" src="images/clock/dots.svg" alt="точки" width="252" height="265">
+                    <p class="clock__item-day">21</p>
+                  </div>
+                  <div class="clock__item swiper-slide"><img class="clock__item-img" src="images/clock/day.svg" alt="день" width="270" height="265"><img class="clock__item-dots" src="images/clock/dots.svg" alt="точки" width="252" height="265">
+                    <p class="clock__item-day">22</p>
+                  </div>
+                  <div class="clock__item swiper-slide"><img class="clock__item-img" src="images/clock/day.svg" alt="день" width="270" height="265"><img class="clock__item-dots" src="images/clock/dots.svg" alt="точки" width="252" height="265">
+                    <p class="clock__item-day">23</p>
+                  </div>
+                  <div class="clock__item swiper-slide"><img class="clock__item-img" src="images/clock/day.svg" alt="день" width="270" height="265"><img class="clock__item-dots" src="images/clock/dots.svg" alt="точки" width="252" height="265">
+                    <p class="clock__item-day">24</p>
+                  </div>
+                  <div class="clock__item swiper-slide"><img class="clock__item-img" src="images/clock/day.svg" alt="день" width="270" height="265"><img class="clock__item-dots" src="images/clock/dots.svg" alt="точки" width="252" height="265">
+                    <p class="clock__item-day">25</p>
+                  </div>
+                  <div class="clock__item swiper-slide"><img class="clock__item-img" src="images/clock/day.svg" alt="день" width="270" height="265"><img class="clock__item-dots" src="images/clock/dots.svg" alt="точки" width="252" height="265">
+                    <p class="clock__item-day">26</p>
+                  </div>
+                  <div class="clock__item swiper-slide"><img class="clock__item-img" src="images/clock/day.svg" alt="день" width="270" height="265"><img class="clock__item-dots" src="images/clock/dots.svg" alt="точки" width="252" height="265">
+                    <p class="clock__item-day">27</p>
+                  </div>
+                  <div class="clock__item swiper-slide"><img class="clock__item-img" src="images/clock/day.svg" alt="день" width="270" height="265"><img class="clock__item-dots" src="images/clock/dots.svg" alt="точки" width="252" height="265">
+                    <p class="clock__item-day">28</p>
+                  </div>
+                  <div class="clock__item swiper-slide"><img class="clock__item-img" src="images/clock/day.svg" alt="день" width="270" height="265"><img class="clock__item-dots" src="images/clock/dots.svg" alt="точки" width="252" height="265">
+                    <p class="clock__item-day">29</p>
+                  </div>
+                  <div class="clock__item swiper-slide"><img class="clock__item-img" src="images/clock/day.svg" alt="день" width="270" height="265"><img class="clock__item-dots" src="images/clock/dots.svg" alt="точки" width="252" height="265">
+                    <p class="clock__item-day">30</p>
+                  </div>
+                  <div class="clock__item swiper-slide"><img class="clock__item-img" src="images/clock/day.svg" alt="день" width="270" height="265"><img class="clock__item-dots" src="images/clock/dots.svg" alt="точки" width="252" height="265">
+                    <p class="clock__item-day">31</p>
+                  </div>
                 </div>
               </div>
+              <div class="swiper-button-next clock-next"></div>
             </div>
           </div>
         </div>
@@ -122,7 +129,14 @@
             <h2 class="photo__title title">Присылайте фото</h2>
             <p class="photo__text">Повторяйте идеи МТС, предлагайте свои. Самые оригинальные фотоидеи будут отмечены комплиментом от компании.</p>
           </div>
-          <div class="photo__download"><img class="photo__img" src="images/photo/photo-img.png" alt="картинка" width="589" height="391">
+          <div class="photo__download">
+            <div class="photo__img">
+              <picture>
+                <source srcset="images/photo/photo-img-small.webp" media="(max-width: 1279px)" type="image/webp">
+                <source srcset="images/photo/photo-img-small.png" media="(max-width: 1279px)" type="image/png">
+                <source srcset="images/photo/photo-img.webp" type="image/webp"><img src="images/photo/photo-img.png" alt="картинка" width="589" height="391">
+              </picture>
+            </div>
             <label class="photo__field">
               <input type="file"><span class="photo__field-title">Загрузить</span>
             </label>
@@ -134,11 +148,70 @@
         <div class="star gifts__star-2"><img class="star__gold" src="images/stars/star-gold.svg" alt="звездочка" width="42" height="48"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="42" height="48"></div>
         <div class="gifts__img">
           <picture>
+            <source srcset="images/gifts/gifts-mob.webp" media="(max-width: 460px)" type="image/webp">
+            <source srcset="images/gifts/gifts-mob.png" media="(max-width: 460px)" type="image/png">
+            <source srcset="images/gifts/gifts-1280.webp" media="(max-width: 1279px)" type="image/webp">
+            <source srcset="images/gifts/gifts-1280.png" media="(max-width: 1279px)" type="image/png">
             <source srcset="images/gifts/gifts.webp" type="image/webp"><img src="images/gifts/gifts.png" alt="подарки" width="1920" height="330">
           </picture>
         </div>
       </div>
     </main>
+    <div class="send" style="display: none;">
+      <div class="send__modal">
+        <div class="send__inner"><a class="send__close" href="#"><span></span><span></span></a>
+          <div class="send__header">
+            <h2 class="send__title">Заполните форму и пришлите свою работу через: Telegram, email.</h2>
+            <ul class="send__soc">
+              <li class="send__soc-item"><a class="send__soc-link" href="#"><img src="images/icons/tg.svg" alt="телеграм" width="60" height="60"></a></li>
+              <li class="send__soc-item"><a class="send__soc-link" href="#"><img src="images/icons/gmail.svg" alt="гмэйл" width="60" height="60"></a></li>
+            </ul>
+          </div>
+          <form class="send__form" action="#">
+            <div class="send__content">
+              <div class="send__info">
+                <div class="send__inputs">
+                  <label class="send__label">
+                    <input class="send__field" type="text" placeholder="Имя">
+                  </label>
+                  <label class="send__label">
+                    <input class="send__field" type="text" placeholder="Фамилия">
+                  </label>
+                  <label class="send__label">
+                    <input class="send__field" type="text" placeholder="Город">
+                  </label>
+                </div>
+                <textarea class="send__textarea send__textarea-desk" name="textarea" cols="30" rows="10" placeholder="Описание фотографии, рецепта.."></textarea>
+              </div>
+              <div class="send__manage">
+                <div class="send__choose">
+                  <label class="send__choose-label">
+                    <input type="radio" name="choose"><span class="send__choose-radio"></span><span class="send__choose-text">Сервировка новогоднего стола в стиле Хюгге</span>
+                  </label>
+                  <label class="send__choose-label">
+                    <input type="radio" name="choose" checked><span class="send__choose-radio"></span><span class="send__choose-text">Новогодний десерт в стиле Хюгге</span>
+                  </label>
+                  <label class="send__choose-label">
+                    <input type="radio" name="choose"><span class="send__choose-radio"></span><span class="send__choose-text">Упаковка новогоднего подарка в стиле Хюгге</span>
+                  </label>
+                  <label class="send__choose-label">
+                    <input type="radio" name="choose"><span class="send__choose-radio"></span><span class="send__choose-text">Украшение новогодней елки в стиле Хюгге</span>
+                  </label>
+                </div>
+                <div class="send__download">
+                  <label class="send__download-label">
+                    <input type="file"><span class="send__download-text">Загрузить фото</span>
+                  </label>
+                  <p class="send__download-warning">не более <br> 50 MB</p>
+                </div>
+                <textarea class="send__textarea send__textarea-mob" name="textarea" cols="30" rows="10" placeholder="Описание фотографии, рецепта.."></textarea>
+              </div>
+            </div>
+            <button class="send__btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="js/main.min.js"></script>
   </body>
 </html>

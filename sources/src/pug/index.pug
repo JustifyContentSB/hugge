@@ -5,10 +5,14 @@ block page
     header.header
         .header__left
             picture
+                source(srcset="images/header/header-left-mob.webp" media="(max-width: 500px)" type="image/webp")
+                source(srcset="images/header/header-left-mob.png" media="(max-width: 500px)" type="image/png")
                 source(srcset="images/header/header-left.webp" type="image/webp")
                 img(src="images/header/header-left.png" alt="подарки" width="651" height="1092")
         .header__right
             picture
+                source(srcset="images/header/header-right-mob.webp" media="(max-width: 500px)" type="image/webp")
+                source(srcset="images/header/header-right-mob.png" media="(max-width: 500px)" type="image/png")
                 source(srcset="images/header/header-right.webp" type="image/webp")
                 img(src="images/header/header-right.png" alt="подарки" width="654" height="1041")
         .header__inner.container
@@ -18,6 +22,10 @@ block page
             .star.header__star.header__star-2
                 img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="61" height="70")
                 img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+            a.header__burger(href="#")
+                span
+                span
+                span
             nav.header__nav
                 ul.header__list
                     li
@@ -59,44 +67,58 @@ block page
                             За 12 дней до Нового 2022 года все смогут найти своё Хюгге и познать искусство быть счастливым. Каждый день уходящего года в праздничном календаре МТС будет волшебным! Вас ждут сюрпризы 
                             и развлечения, самые веселые мастер-классы с неожиданными участниками, душевные подарки и многое другое.
                 .clock__list
-                    .clock__swiper.swiper-container
-                        .clock__wrapper.swiper-wrapper 
-                            .clock__item.clock__item--active.swiper-slide
-                                img.clock__item-img(src="images/clock/day-active.svg", alt="день")
-                                p.clock__item-day 20
-                            .clock__item.swiper-slide
-                                img.clock__item-img(src="images/clock/day.svg", alt="день")
-                                p.clock__item-day 21
-                            .clock__item.swiper-slide
-                                img.clock__item-img(src="images/clock/day.svg", alt="день")
-                                p.clock__item-day 22
-                            .clock__item.swiper-slide
-                                img.clock__item-img(src="images/clock/day.svg", alt="день")
-                                p.clock__item-day 23
-                            .clock__item.swiper-slide
-                                img.clock__item-img(src="images/clock/day.svg", alt="день")
-                                p.clock__item-day 24
-                            .clock__item.swiper-slide
-                                img.clock__item-img(src="images/clock/day.svg", alt="день")
-                                p.clock__item-day 25
-                            .clock__item.swiper-slide
-                                img.clock__item-img(src="images/clock/day.svg", alt="день")
-                                p.clock__item-day 26
-                            .clock__item.swiper-slide
-                                img.clock__item-img(src="images/clock/day.svg", alt="день")
-                                p.clock__item-day 27
-                            .clock__item.swiper-slide
-                                img.clock__item-img(src="images/clock/day.svg", alt="день")
-                                p.clock__item-day 28
-                            .clock__item.swiper-slide
-                                img.clock__item-img(src="images/clock/day.svg", alt="день")
-                                p.clock__item-day 29
-                            .clock__item.swiper-slide
-                                img.clock__item-img(src="images/clock/day.svg", alt="день")
-                                p.clock__item-day 30
-                            .clock__item.swiper-slide
-                                img.clock__item-img(src="images/clock/day.svg", alt="день")
-                                p.clock__item-day 31
+                    .clock__list-inner
+                        .clock__swiper.swiper-container
+                            .clock__wrapper.swiper-wrapper 
+                                .clock__item.clock__item--active.swiper-slide
+                                    img.clock__item-img(src="images/clock/day-active.svg", alt="день" width="270" height="265")
+                                    img.clock__item-dots(src="images/clock/dots-active.svg", alt="точки" width="252" height="265")
+                                    p.clock__item-day 20
+                                .clock__item.swiper-slide
+                                    img.clock__item-img(src="images/clock/day.svg", alt="день" width="270" height="265")
+                                    img.clock__item-dots(src="images/clock/dots.svg", alt="точки" width="252" height="265")
+                                    p.clock__item-day 21
+                                .clock__item.swiper-slide
+                                    img.clock__item-img(src="images/clock/day.svg", alt="день" width="270" height="265")
+                                    img.clock__item-dots(src="images/clock/dots.svg", alt="точки" width="252" height="265")
+                                    p.clock__item-day 22
+                                .clock__item.swiper-slide
+                                    img.clock__item-img(src="images/clock/day.svg", alt="день" width="270" height="265")
+                                    img.clock__item-dots(src="images/clock/dots.svg", alt="точки" width="252" height="265")
+                                    p.clock__item-day 23
+                                .clock__item.swiper-slide
+                                    img.clock__item-img(src="images/clock/day.svg", alt="день" width="270" height="265")
+                                    img.clock__item-dots(src="images/clock/dots.svg", alt="точки" width="252" height="265")
+                                    p.clock__item-day 24
+                                .clock__item.swiper-slide
+                                    img.clock__item-img(src="images/clock/day.svg", alt="день" width="270" height="265")
+                                    img.clock__item-dots(src="images/clock/dots.svg", alt="точки" width="252" height="265")
+                                    p.clock__item-day 25
+                                .clock__item.swiper-slide
+                                    img.clock__item-img(src="images/clock/day.svg", alt="день" width="270" height="265")
+                                    img.clock__item-dots(src="images/clock/dots.svg", alt="точки" width="252" height="265")
+                                    p.clock__item-day 26
+                                .clock__item.swiper-slide
+                                    img.clock__item-img(src="images/clock/day.svg", alt="день" width="270" height="265")
+                                    img.clock__item-dots(src="images/clock/dots.svg", alt="точки" width="252" height="265")
+                                    p.clock__item-day 27
+                                .clock__item.swiper-slide
+                                    img.clock__item-img(src="images/clock/day.svg", alt="день" width="270" height="265")
+                                    img.clock__item-dots(src="images/clock/dots.svg", alt="точки" width="252" height="265")
+                                    p.clock__item-day 28
+                                .clock__item.swiper-slide
+                                    img.clock__item-img(src="images/clock/day.svg", alt="день" width="270" height="265")
+                                    img.clock__item-dots(src="images/clock/dots.svg", alt="точки" width="252" height="265")
+                                    p.clock__item-day 29
+                                .clock__item.swiper-slide
+                                    img.clock__item-img(src="images/clock/day.svg", alt="день" width="270" height="265")
+                                    img.clock__item-dots(src="images/clock/dots.svg", alt="точки" width="252" height="265")
+                                    p.clock__item-day 30
+                                .clock__item.swiper-slide
+                                    img.clock__item-img(src="images/clock/day.svg", alt="день" width="270" height="265")
+                                    img.clock__item-dots(src="images/clock/dots.svg", alt="точки" width="252" height="265")
+                                    p.clock__item-day 31
+                        .swiper-button-next.clock-next
                 
         section.photo
             .photo__inner.container
@@ -114,7 +136,12 @@ block page
                     p.photo__text.
                         Повторяйте идеи МТС, предлагайте свои. Самые оригинальные фотоидеи будут отмечены комплиментом от компании.
                 .photo__download
-                    img.photo__img(src="images/photo/photo-img.png", alt="картинка" width="589" height="391")
+                    .photo__img
+                        picture
+                            source(srcset="images/photo/photo-img-small.webp" media="(max-width: 1279px)" type="image/webp")
+                            source(srcset="images/photo/photo-img-small.png" media="(max-width: 1279px)" type="image/png")
+                            source(srcset="images/photo/photo-img.webp" type="image/webp")
+                            img(src="images/photo/photo-img.png" alt="картинка" width="589" height="391")
                     label.photo__field
                         input(type="file")
                         span.photo__field-title Загрузить
@@ -128,5 +155,62 @@ block page
                 img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="42" height="48")
             .gifts__img
                 picture
+                    source(srcset="images/gifts/gifts-mob.webp" media="(max-width: 460px)" type="image/webp")
+                    source(srcset="images/gifts/gifts-mob.png" media="(max-width: 460px)" type="image/png")
+                    source(srcset="images/gifts/gifts-1280.webp" media="(max-width: 1279px)" type="image/webp")
+                    source(srcset="images/gifts/gifts-1280.png" media="(max-width: 1279px)" type="image/png")
                     source(srcset="images/gifts/gifts.webp" type="image/webp")
                     img(src="images/gifts/gifts.png" alt="подарки" width="1920" height="330")
+
+    .send(style="display: none;")
+        .send__modal
+            .send__inner
+                a.send__close(href="#")
+                    span
+                    span
+                .send__header
+                    h2.send__title Заполните форму и пришлите свою работу через: Telegram, email.
+                    ul.send__soc
+                        li.send__soc-item
+                            a.send__soc-link(href="#")
+                                img(src="images/icons/tg.svg", alt="телеграм" width="60" height="60")
+                        li.send__soc-item
+                            a.send__soc-link(href="#")
+                                img(src="images/icons/gmail.svg", alt="гмэйл" width="60" height="60")
+                form.send__form(action="#")
+                    .send__content
+                        .send__info
+                            .send__inputs
+                                label.send__label
+                                    input.send__field(type="text" placeholder="Имя")
+                                label.send__label
+                                    input.send__field(type="text" placeholder="Фамилия")
+                                label.send__label
+                                    input.send__field(type="text" placeholder="Город")
+                            textarea.send__textarea.send__textarea-desk(name="textarea", cols="30", rows="10" placeholder="Описание фотографии, рецепта..")
+                        .send__manage
+                            .send__choose
+                                label.send__choose-label
+                                    input(type="radio" name="choose")
+                                    span.send__choose-radio
+                                    span.send__choose-text Сервировка новогоднего стола в стиле Хюгге
+                                label.send__choose-label
+                                    input(type="radio" name="choose" checked)
+                                    span.send__choose-radio
+                                    span.send__choose-text Новогодний десерт в стиле Хюгге
+                                label.send__choose-label
+                                    input(type="radio" name="choose")
+                                    span.send__choose-radio
+                                    span.send__choose-text Упаковка новогоднего подарка в стиле Хюгге
+                                label.send__choose-label
+                                    input(type="radio" name="choose")
+                                    span.send__choose-radio
+                                    span.send__choose-text Украшение новогодней елки в стиле Хюгге
+                            .send__download
+                                label.send__download-label
+                                    input(type="file")
+                                    span.send__download-text Загрузить фото
+                                p.send__download-warning.
+                                    не более #[br] 50 MB
+                            textarea.send__textarea.send__textarea-mob(name="textarea", cols="30", rows="10" placeholder="Описание фотографии, рецепта..")
+                    button.send__btn Отправить

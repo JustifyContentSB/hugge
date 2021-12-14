@@ -23,6 +23,16 @@
         &-2
             top: 17%
             right: 20%
+    &__burger
+        display: none
+        width: 50px
+        height: 50px
+        position: relative
+        &-icon
+            &--hover
+                position: absolute
+                left: 0
+                top: 0
     &__nav
         margin-bottom: 80px
     &__list
@@ -49,3 +59,129 @@
         font-size: 18px
         line-height: 179.69%
         text-align: center
+
+@media screen and (max-width: 1800px)
+    .header
+        &__left
+            width: 500px
+        &__right
+            width: 500px
+
+@media screen and (max-width: 1600px)
+    .header
+        &__left
+            width: 400px
+        &__right
+            width: 400px
+
+
+@media screen and (max-width: 1279px)
+    .header
+        &__left
+            width: 250px
+        &__right
+            width: 250px
+        &__mts
+            max-width: 150px
+            margin-bottom: 30px
+        &__logo
+            margin-left: 0
+            max-width: 300px
+
+@media screen and (max-width: 1100px)
+    .header
+        &__left
+            width: 150px
+        &__right
+            width: 150px
+
+@media screen and (max-width: 900px)
+    .header
+        &__burger
+            display: block
+            padding: 10px 5px
+            margin: 0 120px 73px auto
+            z-index: 100
+            transform: rotate(0deg)
+            transition: .5s ease-in-out
+            position: relative
+            span
+                height: 6px
+                background: var(--textColor)
+                border-radius: 10px
+                position: absolute
+                left: 5px
+                right: 5px
+                transition: .25s ease-in-out
+                &:nth-child(1)
+                    top: 10px
+                &:nth-child(2)
+                    top: 50%
+                    transform: translateY(-50%)
+                &:nth-child(3)
+                    bottom: 10px
+            &:hover,
+            &:focus,
+            &:active
+                span
+                    background: var(--titleColor)
+            &.header__burger--open
+                span
+                    &:nth-child(1)
+                        top: 22px
+                        transform: rotate(135deg)
+                    &:nth-child(2)
+                        opacity: 0
+                        left: -60px
+                    &:nth-child(3)
+                        top: 22px
+                        transform: rotate(-135deg)
+        &__nav
+            margin-bottom: 0
+            position: fixed
+            left: 0
+            right: 0
+            top: 0
+            bottom: 0
+            z-index: 90
+            background: #fffdf7
+            display: none
+            &--active
+                display: block
+        &__list
+            padding: 16px
+            padding-top: 80px
+            flex-direction: column
+            grid-gap: 20px
+
+@media screen and (max-width: 767px)
+    .header
+        padding: 10px 0 80px
+        &__mts
+            width: 118px
+        &__logo
+            max-width: 248px
+            margin-bottom: 36px
+        &__star
+            width: 42px
+        &__text
+            font-size: 16px
+            line-height: 150%
+
+@media screen and (max-width: 500px)
+    .header
+        &__left
+            width: 235px
+        &__right
+            width: 86px
+            top: 60px
+        &__burger
+            margin-right: 0
+
+@media screen and (max-width: 460px)
+    .header
+        &__star
+            &-1
+                display: none
+            &-2
+                top: 11%
