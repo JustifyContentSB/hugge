@@ -25,8 +25,8 @@
             right: 20%
     &__burger
         display: none
-        width: 50px
-        height: 50px
+        width: 40px
+        height: 40px
         position: relative
         &-icon
             &--hover
@@ -38,17 +38,17 @@
     &__list
         display: flex
         justify-content: center
-        grid-gap: 26px
+        grid-gap: 30px
         font-weight: bold
         font-size: 18px
         line-height: 21px
         color: var(--textColor)
-        font-family: 'Roboto Condensed'
     &__link
         &--active
             color: var(--titleColor)
     &__mts
         margin-bottom: 50px
+        display: inline-block
     &__logo
         margin-bottom: 25px
         margin-left: 42px
@@ -59,6 +59,29 @@
         font-size: 18px
         line-height: 179.69%
         text-align: center
+    &--mts
+        margin-bottom: 100px
+        .header
+            &__star
+                &-1
+                    left: auto
+                    top: 100px
+                    right: 25%
+    &__toy
+        position: absolute
+        right: 0
+        top: 0
+    &__menu
+        display: flex
+        align-items: center
+        align-self: flex-start
+        .header
+            &__mts
+                width: 143px
+                margin-bottom: 0
+                margin-right: 83px
+            &__nav
+                margin-bottom: 0
 
 @media screen and (max-width: 1800px)
     .header
@@ -66,6 +89,8 @@
             width: 500px
         &__right
             width: 500px
+        &__toy
+            width: 400px
 
 @media screen and (max-width: 1600px)
     .header
@@ -73,6 +98,8 @@
             width: 400px
         &__right
             width: 400px
+        &__toy
+            width: 300px
 
 
 @media screen and (max-width: 1279px)
@@ -94,24 +121,30 @@
             width: 150px
         &__right
             width: 150px
+        &__toy
+            display: none
+        &__menu
+            .header
+                &__mts
+                    margin-right: 50px
 
 @media screen and (max-width: 900px)
     .header
         &__burger
             display: block
-            padding: 10px 5px
+            padding: 10px 6px
             margin: 0 120px 73px auto
             z-index: 100
             transform: rotate(0deg)
             transition: .5s ease-in-out
             position: relative
             span
-                height: 6px
+                height: 4px
                 background: var(--textColor)
                 border-radius: 10px
                 position: absolute
-                left: 5px
-                right: 5px
+                left: 6px
+                right: 6px
                 transition: .25s ease-in-out
                 &:nth-child(1)
                     top: 10px
@@ -153,10 +186,24 @@
             padding-top: 80px
             flex-direction: column
             grid-gap: 20px
+        &--mts
+            margin-bottom: 50px
+            .header
+                &__burger
+                    margin: 0
+                    margin-left: auto
+        &__menu
+            .header
+                &__mts
+                    position: absolute
+                    top: 0
+                    left: 16px
 
 @media screen and (max-width: 767px)
     .header
         padding: 10px 0 80px
+        &--mts
+            padding-bottom: 0
         &__mts
             width: 118px
         &__logo

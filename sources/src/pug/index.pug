@@ -1,6 +1,6 @@
 extends base/_layout
 block head
-    title Main
+    title Адвент-календарь
 block page
     header.header
         .header__left
@@ -17,10 +17,8 @@ block page
                 img(src="images/header/header-right.png" alt="подарки" width="654" height="1041")
         .header__inner.container
             .star.header__star.header__star-1
-                img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="61" height="70")
                 img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
             .star.header__star.header__star-2
-                img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="61" height="70")
                 img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
             a.header__burger(href="#")
                 span
@@ -33,7 +31,7 @@ block page
                     li
                         a.header__link(href="#") Галерея работ
                     li
-                        a.header__link(href="#") 100к1
+                        a.header__link(href="#") ПРО100 к 1
                     li
                         a.header__link(href="#") Подборка настроения
                     li
@@ -50,13 +48,10 @@ block page
             .clock__inner.container
                 .clock__top
                     .star.clock__star-big
-                        img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="122" height="140")
                         img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="122" height="140")
                     .star.clock__star-small
-                        img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="42" height="48")
                         img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="42" height="48")
                     .star.clock__star-down
-                        img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="90" height="103")
                         img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="90" height="103")
                     .clock__time
                         img.clock__img(src="images/clock/clock.svg", alt="часы" width="590" height="590")
@@ -123,13 +118,10 @@ block page
         section.photo
             .photo__inner.container
                 .star.photo__star-1
-                    img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="104" height="119")
                     img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="104" height="119")
                 .star.photo__star-2
-                    img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="70" height="81")
                     img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="70" height="81")
                 .star.photo__star-3
-                    img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="42" height="48")
                     img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="42" height="48")
                 .photo__send
                     h2.photo__title.title Присылайте фото
@@ -148,10 +140,8 @@ block page
 
         .gifts
             .star.gifts__star-1
-                img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="128" height="147")
                 img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="128" height="147")
             .star.gifts__star-2
-                img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="42" height="48")
                 img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="42" height="48")
             .gifts__img
                 picture
@@ -214,3 +204,18 @@ block page
                                     не более #[br] 50 MB
                             textarea.send__textarea.send__textarea-mob(name="textarea", cols="30", rows="10" placeholder="Описание фотографии, рецепта..")
                     button.send__btn Отправить
+
+    .notice(style="display: none;")
+        .notice__inner
+            a.close.notice__close(href="#")
+                span
+                span
+            p.notice__text.
+                Время и так быстро летит, не стоит торопиться. Совсем скоро это окошко откроется!
+            span.notice__no.notice__no-1 Ho
+            span.notice__no.notice__no-2 Ho
+            span.notice__no.notice__no-3 Ho
+            img.notice__santa(src="images/notice/santa.svg", alt="санта" width="386" height="398")
+            img.notice__branch-1(src="images/notice/branch-1.svg", alt="ветка" width="316" height="307")
+            img.notice__branch-2(src="images/notice/branch-2.svg", alt="ветка" width="244" height="250")
+            img.notice__branch-3(src="images/notice/branch-3.svg", alt="ветка" width="170" height="170")

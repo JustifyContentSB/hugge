@@ -5,22 +5,55 @@
    line-height: 100%
    color: var(--titleColor)
 
+.close
+   position: absolute
+   width: 30px
+   height: 30px
+   padding: 2px
+   &:hover,
+   &:focus,
+   &:active
+      span
+         background: var(--titleColor)
+   span
+      display: block
+      width: 100%
+      height: 3px
+      background: var(--textColor)
+      border-radius: 6px
+      transition: background .3s ease
+      &:nth-child(1)
+         transform: rotate(45deg) translate(6px, 6px)
+      &:nth-child(2)
+         transform: rotate(-45deg) translate(-4px, 4px)
+
+.btn
+   min-width: 178px
+   min-height: 50px
+   display: inline-flex
+   justify-content: center
+   align-items: center
+   font-size: 18px
+   font-weight: bold
+   color: var(--textColor)
+   background: url('../images/icons/btn-hover.svg')
+   background: url('../images/icons/btn.svg')
+   background-size: 100% 100%
+   background-repeat: no-repeat
+   transition: background .2s ease, color .2s ease
+   &:hover,
+   &:focus
+      color: var(--titleColor)
+      background-image: url('../images/icons/btn-hover.svg')
+
 .star
    position: absolute
-   animation-name: itemRotate
-   animation-duration: 10.5s
-   animation-iteration-count: infinite
-   animation-timing-function: linear
+   img
+      width: 100%
    &__gold
-      animation-name: starsFlashing
-      animation-duration: 6s
-      animation-iteration-count: infinite
-      animation-timing-function: linear
+      display: none
    &__blue
-      position: absolute
-      z-index: -1
-      left: 0
-      top: 0
+      display: block
 
 @media screen and (max-width: 767px)
    .title

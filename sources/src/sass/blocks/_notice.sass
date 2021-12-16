@@ -1,0 +1,101 @@
+.notice
+   width: 100%
+   max-width: 802px
+   min-height: 406px
+   padding: 20px 75px 20px
+   background: #FFFDF6
+   box-shadow: 0px 0px 30px rgba(180, 126, 17, 0.6)
+   border-radius: 30px
+   position: relative
+   // display: flex
+   flex-direction: column
+   justify-content: center
+   &__close
+      right: 18px
+      top: 18px
+   &__text
+      width: 100%
+      max-width: 364px
+      font-weight: 400
+      font-size: 18px
+      line-height: 180%
+   &__no
+      font-family: var(--journalism)
+      font-weight: 400
+      font-size: 96px
+      line-height: 100%
+      color: var(--titleColor)
+      position: absolute
+      &-1
+         top: 17%
+         right: 35%
+      &-2
+         top: 30%
+         right: 27%
+         font-size: 48px
+      &-3
+         top: 45%
+         right: 24%
+         font-size: 72px
+   &__santa
+      position: absolute
+      bottom: -10%
+      right: -19%
+      animation-name: santa
+      animation-duration: 1.5s
+      animation-timing-function: linear
+   &__branch
+      &-1
+         position: absolute
+         bottom: -38%
+         right: 11%
+      &-2
+         position: absolute
+         bottom: -22%
+         right: 5%
+      &-3
+         position: absolute
+         bottom: -22%
+         right: -2%
+
+@media screen and (max-width: 900px)
+   .notice
+      max-width: 328px
+      min-height: 540px
+      padding: 50px 25px
+      padding-bottom: 240px
+      &__text
+         font-size: 16px
+         line-height: 150%
+      &__no
+         right: auto
+         top: auto
+         font-size: 70px
+         &-1
+            bottom: 28%
+         &-2
+            left: 28%
+            bottom: 29%
+            font-size: 30px
+         &-3
+            left: 29%
+            bottom: 20%
+            font-size: 48px
+      &__santa
+         width: 280px
+         bottom: -5%
+         right: -16%
+      &__branch
+         &-1
+            width: 220px
+            right: auto
+            left: -5%
+            bottom: -20%
+         &-2
+            width: 180px
+            bottom: -14%
+            right: 24%
+         &-3
+            width: 120px
+            bottom: -12%
+            right: 14%

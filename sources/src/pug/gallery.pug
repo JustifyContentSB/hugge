@@ -1,0 +1,760 @@
+extends base/_layout
+block head
+    title Галерея работ
+block page
+    header.header.header--mts
+        .star.header__star.header__star-1
+            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+        .header__toy
+            img.header__toy-img(src="images/header/header-toy.png", alt="картинка" width="511" height="374")
+        .header__inner.container
+            a.header__burger(href="#")
+                span
+                span
+                span
+            .header__menu
+                a.header__mts(href="#")
+                    img(src="images/icons/mts.svg", alt="мтс" width="206" height="51")
+                nav.header__nav
+                    ul.header__list
+                        li
+                            a.header__link(href="#") Адвент-календарь
+                        li
+                            a.header__link.header__link--active(href="#") Галерея работ
+                        li
+                            a.header__link(href="#") ПРО100 к 1
+                        li
+                            a.header__link(href="#") Подборка настроения
+                        li
+                            a.header__link(href="#") Трансляция 
+
+    main.main
+        .mts
+            .mts__inner.container
+                .star.mts__star-1
+                    img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                .star.mts__star-2
+                    img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                .star.mts__star-3
+                    img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                .star.mts__star-4
+                    img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                .mts__images
+                    img.mts__img.mts__bird(src="images/mts/bird.png", alt="птичка" width="563" height="483")
+                    img.mts__img.mts__branch(src="images/mts/branch.png", alt="птичка" width="381" height="380")
+                    img.mts__img.mts__gift(src="images/mts/gift.png", alt="птичка" width="409" height="394")
+                section.mts__info
+                    h1.mts__title.title галерея работ мтс
+                    p.mts__text.
+                        Листая семейные альбомы, мы всегда находим снимки за праздничным столом, которые так согревают сердце. Именно эти моменты наполнены магией Хюгге. Этой зимой мы хотим собрать свой Хюгге-альбом. Присылайте фотографии работ, которые вы сделали на мастер-классах в форму внизу. Мы счастливы будем видеть, как вы занимаетесь любимым делом. Если вам понравилась работа коллеги, оцените её лайком. Работы с наибольшим количеством лайков, принесут авторам комплименты от МТС.
+                    a.mts__btn.btn(href="#") Загрузить
+
+        .gallery-wrapper
+            section.gallery.gallery-1
+                .gallery__inner.container
+                    h2.title.gallery__title Сервировка новогоднего стола в стиле Хюгге
+                    .star.gallery__star-1
+                        img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                    .star.gallery__star-2
+                        img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                    .gallery__list
+                        .gallery__list-inner
+                            .gallery__swiper.swiper-container
+                                .gallery__swiper-wrapper.swiper-wrapper
+                                    .gallery__item.gallery__item--active.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                        .swiper-button-prev.gallery__prev
+                        .swiper-button-next.gallery__next
+            section.gallery.gallery-2
+                .gallery__inner.container
+                    h2.title.gallery__title Новогодний десерт в стиле Хюгге
+                    .star.gallery__star-1
+                        img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                    .star.gallery__star-2
+                        img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                    .gallery__list
+                        .gallery__list-inner
+                            .gallery__swiper.swiper-container
+                                .gallery__swiper-wrapper.swiper-wrapper
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                        .swiper-button-prev.gallery__prev
+                        .swiper-button-next.gallery__next
+            section.gallery.gallery-3
+                .gallery__inner.container
+                    h2.title.gallery__title Упаковка новогоднего подарка в стиле Хюгге
+                    .star.gallery__star-1
+                        img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                    .star.gallery__star-2
+                        img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                    .gallery__list
+                        .gallery__list-inner
+                            .gallery__swiper.swiper-container
+                                .gallery__swiper-wrapper.swiper-wrapper
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn.gallery__like-btn--clicked
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn.gallery__like-btn--clicked
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn.gallery__like-btn--clicked
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn.gallery__like-btn--clicked
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn.gallery__like-btn--clicked
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn.gallery__like-btn--clicked
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                        .swiper-button-prev.gallery__prev
+                        .swiper-button-next.gallery__next
+            section.gallery.gallery-4
+                .gallery__inner.container
+                    h2.title.gallery__title Украшение новогодней елки в стиле Хюгге
+                    .gallery__list
+                        .gallery__list-inner
+                            .gallery__swiper.swiper-container
+                                .gallery__swiper-wrapper.swiper-wrapper
+                                    .gallery__item.gallery__item--active.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn.gallery__like-btn--clicked
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +1
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn.gallery__like-btn--clicked
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                                    .gallery__item.swiper-slide
+                                        .gallery__content
+                                            .gallery__content-img.background-image
+                                                picture
+                                                    source(srcset="images/gallery/gallery-img.webp" type="image/webp")
+                                                    img(src="images/gallery/gallery-img.jpg" alt="картинка" width="271" height="181")
+                                            button.gallery__content-zoom
+                                                img(src="images/icons/zoom.svg", alt="увеличить" width="22" height="22")
+                                        .gallery__info
+                                            .gallery__like
+                                                button.gallery__like-btn
+                                                    img.gallery__like-btn__icon(src="images/icons/like.png", alt="лайк" width="22" height="21")
+                                                    img.gallery__like-btn__icon.gallery__like-btn__icon--liked(src="images/icons/like-red.png", alt="лайк" width="22" height="21")
+                                                span.gallery__like-num +0
+                                            .gallery__person
+                                                p.gallery__person-name Александр Иванов
+                                                p.gallery__person-city Минск
+                                            p.gallery__text Описание..
+                        .swiper-button-prev.gallery__prev
+                        .swiper-button-next.gallery__next
+
+        .gifts
+            .star.gifts__star-1
+                img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="128" height="147")
+                img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="128" height="147")
+            .star.gifts__star-2
+                img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="42" height="48")
+                img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="42" height="48")
+            .gifts__img
+                picture
+                    source(srcset="images/gifts/gifts-mob.webp" media="(max-width: 460px)" type="image/webp")
+                    source(srcset="images/gifts/gifts-mob.png" media="(max-width: 460px)" type="image/png")
+                    source(srcset="images/gifts/gifts-1280.webp" media="(max-width: 1279px)" type="image/webp")
+                    source(srcset="images/gifts/gifts-1280.png" media="(max-width: 1279px)" type="image/png")
+                    source(srcset="images/gifts/gifts.webp" type="image/webp")
+                    img(src="images/gifts/gifts.png" alt="подарки" width="1920" height="330")
+
+    .send(style="display: none;")
+        .send__modal
+            .send__inner
+                a.send__close(href="#")
+                    span
+                    span
+                .send__header
+                    h2.send__title Заполните форму и пришлите свою работу через: Telegram, email.
+                    ul.send__soc
+                        li.send__soc-item
+                            a.send__soc-link(href="#")
+                                img(src="images/icons/tg.svg", alt="телеграм" width="60" height="60")
+                        li.send__soc-item
+                            a.send__soc-link(href="#")
+                                img(src="images/icons/gmail.svg", alt="гмэйл" width="60" height="60")
+                form.send__form(action="#")
+                    .send__content
+                        .send__info
+                            .send__inputs
+                                label.send__label
+                                    input.send__field(type="text" placeholder="Имя")
+                                label.send__label
+                                    input.send__field(type="text" placeholder="Фамилия")
+                                label.send__label
+                                    input.send__field(type="text" placeholder="Город")
+                            textarea.send__textarea.send__textarea-desk(name="textarea", cols="30", rows="10" placeholder="Описание фотографии, рецепта..")
+                        .send__manage
+                            .send__choose
+                                label.send__choose-label
+                                    input(type="radio" name="choose")
+                                    span.send__choose-radio
+                                    span.send__choose-text Сервировка новогоднего стола в стиле Хюгге
+                                label.send__choose-label
+                                    input(type="radio" name="choose" checked)
+                                    span.send__choose-radio
+                                    span.send__choose-text Новогодний десерт в стиле Хюгге
+                                label.send__choose-label
+                                    input(type="radio" name="choose")
+                                    span.send__choose-radio
+                                    span.send__choose-text Упаковка новогоднего подарка в стиле Хюгге
+                                label.send__choose-label
+                                    input(type="radio" name="choose")
+                                    span.send__choose-radio
+                                    span.send__choose-text Украшение новогодней елки в стиле Хюгге
+                            .send__download
+                                label.send__download-label
+                                    input(type="file")
+                                    span.send__download-text Загрузить фото
+                                p.send__download-warning.
+                                    не более #[br] 50 MB
+                            textarea.send__textarea.send__textarea-mob(name="textarea", cols="30", rows="10" placeholder="Описание фотографии, рецепта..")
+                    button.send__btn Отправить
+
+    .notice(style="display: none;")
+        .notice__inner
+            a.close.notice__close(href="#")
+                span
+                span
+            p.notice__text.
+                Время и так быстро летит, не стоит торопиться. Совсем скоро это окошко откроется!
+            span.notice__no.notice__no-1 Ho
+            span.notice__no.notice__no-2 Ho
+            span.notice__no.notice__no-3 Ho
+            img.notice__santa(src="images/notice/santa.svg", alt="санта" width="386" height="398")
+            img.notice__branch-1(src="images/notice/branch-1.svg", alt="ветка" width="316" height="307")
+            img.notice__branch-2(src="images/notice/branch-2.svg", alt="ветка" width="244" height="250")
+            img.notice__branch-3(src="images/notice/branch-3.svg", alt="ветка" width="170" height="170")
