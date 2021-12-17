@@ -23,16 +23,15 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <header class="header header--mts">
-      <div class="star header__star header__star-1"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+    <header class="header header--pro">
       <div class="header__toy"><img class="header__toy-img" src="images/header/header-toy.png" alt="картинка" width="511" height="374"></div>
       <div class="header__inner container"><a class="header__burger" href="#"><span></span><span></span><span></span></a>
         <div class="header__menu"><a class="header__mts" href="#"><img src="images/icons/mts.svg" alt="мтс" width="206" height="51"></a>
           <nav class="header__nav">
             <ul class="header__list">
               <li><a class="header__link" href="#">Адвент-календарь</a></li>
-              <li><a class="header__link header__link--active" href="#">Галерея работ</a></li>
-              <li><a class="header__link" href="#">ПРО100 к 1</a></li>
+              <li><a class="header__link" href="#">Галерея работ</a></li>
+              <li><a class="header__link header__link--active" href="#">ПРО100 к 1</a></li>
               <li><a class="header__link" href="#">Подборка настроения</a></li>
               <li><a class="header__link" href="#">Трансляция </a></li>
             </ul>
@@ -40,10 +39,23 @@
         </div>
       </div>
     </header>
-    <main class="main main--visible">
+    <main class="main main--visible main--pro">
       <section class="description">
         <div class="description__inner container">
-          <div class="description__img"><img src="images/survey/pro100.png" alt="pro100" width="277"></div>
+          <div class="star description__star-1"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+          <div class="star description__star-2"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+          <div class="star description__star-3"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+          <div class="star description__star-4"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+          <div class="star description__star-5"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+          <div class="star description__star-6"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+          <div class="star description__star-7"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+          <div class="description__img">
+            <picture>
+              <source srcset="images/survey/pro100-rotate.webp" media="(max-width: 1365px)" type="image/webp">
+              <source srcset="images/survey/pro100-rotate.png" media="(max-width: 1365px)" type="image/png">
+              <source srcset="images/survey/pro100.webp" type="image/webp"><img src="images/survey/pro100.png" alt="pro100" width="282" height="743">
+            </picture>
+          </div>
           <div class="description__info">
             <h1 class="description__title title">ПРО100 К 1</h1>
             <div class="description__text">
@@ -61,10 +73,23 @@
       </section>
       <section class="survey">
         <div class="survey__inner">
-          <h2 class="survey__title title title--small">Вопросы и варианты ответов:</h2>
+          <h2 class="survey__title title title--small container">Вопросы и варианты ответов:</h2>
           <ol class="survey__list">
             <li class="survey__item container">
-              <div class="survey__img"></div>
+              <div class="star survey__star-1"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-2"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-3"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-4"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-5"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="survey__img">
+                <picture>
+                  <source srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp">
+                  <source srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png">
+                  <source srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp">
+                  <source srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png">
+                  <source srcset="images/survey/survey.webp" type="image/webp"><img src="images/survey/survey.png" alt="картинка" width="264" height="480">
+                </picture>
+              </div>
               <div class="survey__info">
                 <h3 class="survey__question">Самая популярная новогодняя песня?</h3>
                 <div class="survey__inputs">
@@ -82,8 +107,570 @@
                   </label>
                 </div>
                 <div class="survey__variant">
-                  <p>Свой вариант</p>
-                  <input class="survey__variant-field" type="text">
+                  <p class="survey__variant-title">Свой вариант</p>
+                  <div class="survey__variant-field">
+                    <textarea name="surveyText" cols="30" rows="10" placeholder="Свой вариант"></textarea>
+                  </div>
+                </div>
+                <button class="survey__send btn">Отправить</button>
+              </div>
+            </li>
+            <li class="survey__item container">
+              <div class="star survey__star-1"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-2"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-3"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-4"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-5"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="survey__img">
+                <picture>
+                  <source srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp">
+                  <source srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png">
+                  <source srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp">
+                  <source srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png">
+                  <source srcset="images/survey/survey.webp" type="image/webp"><img src="images/survey/survey.png" alt="картинка" width="264" height="480">
+                </picture>
+              </div>
+              <div class="survey__info">
+                <h3 class="survey__question">Любимая новогодняя традиция?</h3>
+                <div class="survey__inputs">
+                  <label class="survey__label">
+                    <input type="radio" name="song"><span class="survey__checkbox"></span><span class="survey__choose">Сжигать желание </span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="song"><span class="survey__checkbox"></span><span class="survey__choose">Наряжать ёлку</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="song"><span class="survey__checkbox"></span><span class="survey__choose">Готовить всей семьей праздничный стол</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="song"><span class="survey__checkbox"></span><span class="survey__choose">Открывать в полночь подарки </span>
+                  </label>
+                </div>
+                <div class="survey__variant">
+                  <p class="survey__variant-title">Свой вариант</p>
+                  <div class="survey__variant-field">
+                    <textarea name="surveyText" cols="30" rows="10" placeholder="Свой вариант"></textarea>
+                  </div>
+                </div>
+                <button class="survey__send btn">Отправить</button>
+              </div>
+            </li>
+            <li class="survey__item container">
+              <div class="star survey__star-1"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-2"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-3"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-4"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-5"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="survey__img">
+                <picture>
+                  <source srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp">
+                  <source srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png">
+                  <source srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp">
+                  <source srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png">
+                  <source srcset="images/survey/survey.webp" type="image/webp"><img src="images/survey/survey.png" alt="картинка" width="264" height="480">
+                </picture>
+              </div>
+              <div class="survey__info">
+                <h3 class="survey__question">Главный символ Нового года – это …</h3>
+                <div class="survey__inputs">
+                  <label class="survey__label">
+                    <input type="radio" name="symbol"><span class="survey__checkbox"></span><span class="survey__choose">Ёлка</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="symbol"><span class="survey__checkbox"></span><span class="survey__choose">Дед Мороз</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="symbol"><span class="survey__checkbox"></span><span class="survey__choose">Мандарины</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="symbol"><span class="survey__checkbox"></span><span class="survey__choose">Животное года (Тигр)</span>
+                  </label>
+                </div>
+                <div class="survey__variant">
+                  <p class="survey__variant-title">Свой вариант</p>
+                  <div class="survey__variant-field">
+                    <textarea name="surveyText" cols="30" rows="10" placeholder="Свой вариант"></textarea>
+                  </div>
+                </div>
+                <button class="survey__send btn">Отправить</button>
+              </div>
+            </li>
+            <li class="survey__item container">
+              <div class="star survey__star-1"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-2"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-3"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-4"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-5"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="survey__img">
+                <picture>
+                  <source srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp">
+                  <source srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png">
+                  <source srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp">
+                  <source srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png">
+                  <source srcset="images/survey/survey.webp" type="image/webp"><img src="images/survey/survey.png" alt="картинка" width="264" height="480">
+                </picture>
+              </div>
+              <div class="survey__info">
+                <h3 class="survey__question">Где вы в детстве находили свои подарки?</h3>
+                <div class="survey__inputs">
+                  <label class="survey__label">
+                    <input type="radio" name="gifts"><span class="survey__checkbox"></span><span class="survey__choose">Под ёлкой</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="gifts"><span class="survey__checkbox"></span><span class="survey__choose">В мешке с подарками</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="gifts"><span class="survey__checkbox"></span><span class="survey__choose">В шкафу родителей</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="gifts"><span class="survey__checkbox"></span><span class="survey__choose">Под подушкой</span>
+                  </label>
+                </div>
+                <div class="survey__variant">
+                  <p class="survey__variant-title">Свой вариант</p>
+                  <div class="survey__variant-field">
+                    <textarea name="surveyText" cols="30" rows="10" placeholder="Свой вариант"></textarea>
+                  </div>
+                </div>
+                <button class="survey__send btn">Отправить</button>
+              </div>
+            </li>
+            <li class="survey__item container">
+              <div class="star survey__star-1"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-2"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-3"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-4"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-5"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="survey__img">
+                <picture>
+                  <source srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp">
+                  <source srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png">
+                  <source srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp">
+                  <source srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png">
+                  <source srcset="images/survey/survey.webp" type="image/webp"><img src="images/survey/survey.png" alt="картинка" width="264" height="480">
+                </picture>
+              </div>
+              <div class="survey__info">
+                <h3 class="survey__question">Блюдо, без которого не обойдется новогодний стол?</h3>
+                <div class="survey__inputs">
+                  <label class="survey__label">
+                    <input type="radio" name="dish"><span class="survey__checkbox"></span><span class="survey__choose">Оливье</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="dish"><span class="survey__checkbox"></span><span class="survey__choose">Мандарины</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="dish"><span class="survey__checkbox"></span><span class="survey__choose">Селедка под шубой</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="dish"><span class="survey__checkbox"></span><span class="survey__choose">Запеченная курица, индейка или утка</span>
+                  </label>
+                </div>
+                <div class="survey__variant">
+                  <p class="survey__variant-title">Свой вариант</p>
+                  <div class="survey__variant-field">
+                    <textarea name="surveyText" cols="30" rows="10" placeholder="Свой вариант"></textarea>
+                  </div>
+                </div>
+                <button class="survey__send btn">Отправить</button>
+              </div>
+            </li>
+            <li class="survey__item container">
+              <div class="star survey__star-1"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-2"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-3"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-4"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-5"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="survey__img">
+                <picture>
+                  <source srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp">
+                  <source srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png">
+                  <source srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp">
+                  <source srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png">
+                  <source srcset="images/survey/survey.webp" type="image/webp"><img src="images/survey/survey.png" alt="картинка" width="264" height="480">
+                </picture>
+              </div>
+              <div class="survey__info">
+                <h3 class="survey__question">Лучший мой подарочек – это …</h3>
+                <div class="survey__inputs">
+                  <label class="survey__label">
+                    <input type="radio" name="best"><span class="survey__checkbox"></span><span class="survey__choose">Ты</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="best"><span class="survey__checkbox"></span><span class="survey__choose">Деньги</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="best"><span class="survey__checkbox"></span><span class="survey__choose">Путевка на отдых</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="best"><span class="survey__checkbox"></span><span class="survey__choose">Праздник в кругу родных</span>
+                  </label>
+                </div>
+                <div class="survey__variant">
+                  <p class="survey__variant-title">Свой вариант</p>
+                  <div class="survey__variant-field">
+                    <textarea name="surveyText" cols="30" rows="10" placeholder="Свой вариант"></textarea>
+                  </div>
+                </div>
+                <button class="survey__send btn">Отправить</button>
+              </div>
+            </li>
+            <li class="survey__item container">
+              <div class="star survey__star-1"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-2"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-3"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-4"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-5"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="survey__img">
+                <picture>
+                  <source srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp">
+                  <source srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png">
+                  <source srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp">
+                  <source srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png">
+                  <source srcset="images/survey/survey.webp" type="image/webp"><img src="images/survey/survey.png" alt="картинка" width="264" height="480">
+                </picture>
+              </div>
+              <div class="survey__info">
+                <h3 class="survey__question">Самый популярный новогодний фильм?</h3>
+                <div class="survey__inputs">
+                  <label class="survey__label">
+                    <input type="radio" name="movie"><span class="survey__checkbox"></span><span class="survey__choose">«Новогодняя» – Дискотека Авария</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="movie"><span class="survey__checkbox"></span><span class="survey__choose">«Happy New Year» – ABBA</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="movie"><span class="survey__checkbox"></span><span class="survey__choose">«Let It Snow» – Dean Martin</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="movie"><span class="survey__checkbox"></span><span class="survey__choose">«Новогодние игрушки» – Аркадий Хоралов</span>
+                  </label>
+                </div>
+                <div class="survey__variant">
+                  <p class="survey__variant-title">Свой вариант</p>
+                  <div class="survey__variant-field">
+                    <textarea name="surveyText" cols="30" rows="10" placeholder="Свой вариант"></textarea>
+                  </div>
+                </div>
+                <button class="survey__send btn">Отправить</button>
+              </div>
+            </li>
+            <li class="survey__item container">
+              <div class="star survey__star-1"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-2"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-3"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-4"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-5"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="survey__img">
+                <picture>
+                  <source srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp">
+                  <source srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png">
+                  <source srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp">
+                  <source srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png">
+                  <source srcset="images/survey/survey.webp" type="image/webp"><img src="images/survey/survey.png" alt="картинка" width="264" height="480">
+                </picture>
+              </div>
+              <div class="survey__info">
+                <h3 class="survey__question">Самый известный новогодний персонаж?</h3>
+                <div class="survey__inputs">
+                  <label class="survey__label">
+                    <input type="radio" name="hero"><span class="survey__checkbox"></span><span class="survey__choose">Снеговик</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="hero"><span class="survey__checkbox"></span><span class="survey__choose">Дед Мороз</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="hero"><span class="survey__checkbox"></span><span class="survey__choose">Снегурочка</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="hero"><span class="survey__checkbox"></span><span class="survey__choose">Гринч</span>
+                  </label>
+                </div>
+                <div class="survey__variant">
+                  <p class="survey__variant-title">Свой вариант</p>
+                  <div class="survey__variant-field">
+                    <textarea name="surveyText" cols="30" rows="10" placeholder="Свой вариант"></textarea>
+                  </div>
+                </div>
+                <button class="survey__send btn">Отправить</button>
+              </div>
+            </li>
+            <li class="survey__item container">
+              <div class="star survey__star-1"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-2"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-3"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-4"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-5"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="survey__img">
+                <picture>
+                  <source srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp">
+                  <source srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png">
+                  <source srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp">
+                  <source srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png">
+                  <source srcset="images/survey/survey.webp" type="image/webp"><img src="images/survey/survey.png" alt="картинка" width="264" height="480">
+                </picture>
+              </div>
+              <div class="survey__info">
+                <h3 class="survey__question">Лучшее зимнее развлечение?</h3>
+                <div class="survey__inputs">
+                  <label class="survey__label">
+                    <input type="radio" name="game"><span class="survey__checkbox"></span><span class="survey__choose">Кататься с горки</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="game"><span class="survey__checkbox"></span><span class="survey__choose">Лепка снеговика</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="game"><span class="survey__checkbox"></span><span class="survey__choose">Просмотр новогодних фильмов</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="game"><span class="survey__checkbox"></span><span class="survey__choose">Игра в снежки</span>
+                  </label>
+                </div>
+                <div class="survey__variant">
+                  <p class="survey__variant-title">Свой вариант</p>
+                  <div class="survey__variant-field">
+                    <textarea name="surveyText" cols="30" rows="10" placeholder="Свой вариант"></textarea>
+                  </div>
+                </div>
+                <button class="survey__send btn">Отправить</button>
+              </div>
+            </li>
+            <li class="survey__item container">
+              <div class="star survey__star-1"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-2"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-3"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-4"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-5"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="survey__img">
+                <picture>
+                  <source srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp">
+                  <source srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png">
+                  <source srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp">
+                  <source srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png">
+                  <source srcset="images/survey/survey.webp" type="image/webp"><img src="images/survey/survey.png" alt="картинка" width="264" height="480">
+                </picture>
+              </div>
+              <div class="survey__info">
+                <h3 class="survey__question">Самый классный Новый год - это когда встречаешь его с ...</h3>
+                <div class="survey__inputs">
+                  <label class="survey__label">
+                    <input type="radio" name="meet"><span class="survey__checkbox"></span><span class="survey__choose">С семьей</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="meet"><span class="survey__checkbox"></span><span class="survey__choose">С друзьями</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="meet"><span class="survey__checkbox"></span><span class="survey__choose">С любимым человеком </span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="meet"><span class="survey__checkbox"></span><span class="survey__choose">С хорошим настроением </span>
+                  </label>
+                </div>
+                <div class="survey__variant">
+                  <p class="survey__variant-title">Свой вариант</p>
+                  <div class="survey__variant-field">
+                    <textarea name="surveyText" cols="30" rows="10" placeholder="Свой вариант"></textarea>
+                  </div>
+                </div>
+                <button class="survey__send btn">Отправить</button>
+              </div>
+            </li>
+            <li class="survey__item container">
+              <div class="star survey__star-1"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-2"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-3"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-4"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-5"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="survey__img">
+                <picture>
+                  <source srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp">
+                  <source srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png">
+                  <source srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp">
+                  <source srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png">
+                  <source srcset="images/survey/survey.webp" type="image/webp"><img src="images/survey/survey.png" alt="картинка" width="264" height="480">
+                </picture>
+              </div>
+              <div class="survey__info">
+                <h3 class="survey__question">Самое красивое новогоднее украшение?</h3>
+                <div class="survey__inputs">
+                  <label class="survey__label">
+                    <input type="radio" name="decoration"><span class="survey__checkbox"></span><span class="survey__choose">Дождик</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="decoration"><span class="survey__checkbox"></span><span class="survey__choose">Гирлянда</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="decoration"><span class="survey__checkbox"></span><span class="survey__choose">Я сам</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="decoration"><span class="survey__checkbox"></span><span class="survey__choose">Советские ёлочные игрушки</span>
+                  </label>
+                </div>
+                <div class="survey__variant">
+                  <p class="survey__variant-title">Свой вариант</p>
+                  <div class="survey__variant-field">
+                    <textarea name="surveyText" cols="30" rows="10" placeholder="Свой вариант"></textarea>
+                  </div>
+                </div>
+                <button class="survey__send btn">Отправить</button>
+              </div>
+            </li>
+            <li class="survey__item container">
+              <div class="star survey__star-1"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-2"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-3"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-4"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-5"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="survey__img">
+                <picture>
+                  <source srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp">
+                  <source srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png">
+                  <source srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp">
+                  <source srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png">
+                  <source srcset="images/survey/survey.webp" type="image/webp"><img src="images/survey/survey.png" alt="картинка" width="264" height="480">
+                </picture>
+              </div>
+              <div class="survey__info">
+                <h3 class="survey__question">Где спрятать подарки от «домашних» до Нового года?</h3>
+                <div class="survey__inputs">
+                  <label class="survey__label">
+                    <input type="radio" name="hide"><span class="survey__checkbox"></span><span class="survey__choose">В шкафу</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="hide"><span class="survey__checkbox"></span><span class="survey__choose">У друзей</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="hide"><span class="survey__checkbox"></span><span class="survey__choose">На работе</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="hide"><span class="survey__checkbox"></span><span class="survey__choose">У соседей</span>
+                  </label>
+                </div>
+                <div class="survey__variant">
+                  <p class="survey__variant-title">Свой вариант</p>
+                  <div class="survey__variant-field">
+                    <textarea name="surveyText" cols="30" rows="10" placeholder="Свой вариант"></textarea>
+                  </div>
+                </div>
+                <button class="survey__send btn">Отправить</button>
+              </div>
+            </li>
+            <li class="survey__item container">
+              <div class="star survey__star-1"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-2"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-3"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-4"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-5"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="survey__img">
+                <picture>
+                  <source srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp">
+                  <source srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png">
+                  <source srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp">
+                  <source srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png">
+                  <source srcset="images/survey/survey.webp" type="image/webp"><img src="images/survey/survey.png" alt="картинка" width="264" height="480">
+                </picture>
+              </div>
+              <div class="survey__info">
+                <h3 class="survey__question">Самый плохой подарок от Тайного Санты?</h3>
+                <div class="survey__inputs">
+                  <label class="survey__label">
+                    <input type="radio" name="bad"><span class="survey__checkbox"></span><span class="survey__choose">Его отсутствие</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="bad"><span class="survey__checkbox"></span><span class="survey__choose">Носки</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="bad"><span class="survey__checkbox"></span><span class="survey__choose">Все подарки хороши </span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="bad"><span class="survey__checkbox"></span><span class="survey__choose">Конфеты</span>
+                  </label>
+                </div>
+                <div class="survey__variant">
+                  <p class="survey__variant-title">Свой вариант</p>
+                  <div class="survey__variant-field">
+                    <textarea name="surveyText" cols="30" rows="10" placeholder="Свой вариант"></textarea>
+                  </div>
+                </div>
+                <button class="survey__send btn">Отправить</button>
+              </div>
+            </li>
+            <li class="survey__item container">
+              <div class="star survey__star-1"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-2"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-3"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-4"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-5"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="survey__img">
+                <picture>
+                  <source srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp">
+                  <source srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png">
+                  <source srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp">
+                  <source srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png">
+                  <source srcset="images/survey/survey.webp" type="image/webp"><img src="images/survey/survey.png" alt="картинка" width="264" height="480">
+                </picture>
+              </div>
+              <div class="survey__info">
+                <h3 class="survey__question">Любимый зимний элемент одежды?</h3>
+                <div class="survey__inputs">
+                  <label class="survey__label">
+                    <input type="radio" name="clothes"><span class="survey__checkbox"></span><span class="survey__choose">Варежки</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="clothes"><span class="survey__checkbox"></span><span class="survey__choose">Шуба</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="clothes"><span class="survey__checkbox"></span><span class="survey__choose">Шарф</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="clothes"><span class="survey__checkbox"></span><span class="survey__choose">Свитер</span>
+                  </label>
+                </div>
+                <div class="survey__variant">
+                  <p class="survey__variant-title">Свой вариант</p>
+                  <div class="survey__variant-field">
+                    <textarea name="surveyText" cols="30" rows="10" placeholder="Свой вариант"></textarea>
+                  </div>
+                </div>
+                <button class="survey__send btn">Отправить</button>
+              </div>
+            </li>
+            <li class="survey__item container">
+              <div class="star survey__star-1"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-2"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-3"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-4"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="star survey__star-5"><img class="star__blue" src="images/stars/star-blue.svg" alt="звездочка" width="61" height="70"></div>
+              <div class="survey__img">
+                <picture>
+                  <source srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp">
+                  <source srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png">
+                  <source srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp">
+                  <source srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png">
+                  <source srcset="images/survey/survey.webp" type="image/webp"><img src="images/survey/survey.png" alt="картинка" width="264" height="480">
+                </picture>
+              </div>
+              <div class="survey__info">
+                <h3 class="survey__question">Где лучше всего проводить зиму?</h3>
+                <div class="survey__inputs">
+                  <label class="survey__label">
+                    <input type="radio" name="winter"><span class="survey__checkbox"></span><span class="survey__choose">Дома</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="winter"><span class="survey__checkbox"></span><span class="survey__choose">В горах</span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="winter"><span class="survey__checkbox"></span><span class="survey__choose">За городом </span>
+                  </label>
+                  <label class="survey__label">
+                    <input type="radio" name="winter"><span class="survey__checkbox"></span><span class="survey__choose">На курорте </span>
+                  </label>
+                </div>
+                <div class="survey__variant">
+                  <p class="survey__variant-title">Свой вариант</p>
+                  <div class="survey__variant-field">
+                    <textarea name="surveyText" cols="30" rows="10" placeholder="Свой вариант"></textarea>
+                  </div>
                 </div>
                 <button class="survey__send btn">Отправить</button>
               </div>

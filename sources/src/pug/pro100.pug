@@ -2,9 +2,7 @@ extends base/_layout
 block head
     title Про100 К 1
 block page
-    header.header.header--mts
-        .star.header__star.header__star-1
-            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+    header.header.header--pro
         .header__toy
             img.header__toy-img(src="images/header/header-toy.png", alt="картинка" width="511" height="374")
         .header__inner.container
@@ -20,19 +18,37 @@ block page
                         li
                             a.header__link(href="#") Адвент-календарь
                         li
-                            a.header__link.header__link--active(href="#") Галерея работ
+                            a.header__link(href="#") Галерея работ
                         li
-                            a.header__link(href="#") ПРО100 к 1
+                            a.header__link.header__link--active(href="#") ПРО100 к 1
                         li
                             a.header__link(href="#") Подборка настроения
                         li
                             a.header__link(href="#") Трансляция 
 
-    main.main.main--visible
+    main.main.main--visible.main--pro
         section.description
             .description__inner.container
+                .star.description__star-1
+                    img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                .star.description__star-2
+                    img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                .star.description__star-3
+                    img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                .star.description__star-4
+                    img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                .star.description__star-5
+                    img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                .star.description__star-6
+                    img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                .star.description__star-7
+                    img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
                 .description__img
-                    img(src="images/survey/pro100.png", alt="pro100" width="277")
+                    picture
+                        source(srcset="images/survey/pro100-rotate.webp" media="(max-width: 1365px)" type="image/webp")
+                        source(srcset="images/survey/pro100-rotate.png" media="(max-width: 1365px)" type="image/png")
+                        source(srcset="images/survey/pro100.webp" type="image/webp")
+                        img(src="images/survey/pro100.png" alt="pro100" width="282" height="743")
                 .description__info
                     h1.description__title.title ПРО100 К 1
                     .description__text
@@ -45,10 +61,27 @@ block page
 
         section.survey
             .survey__inner
-                h2.survey__title.title.title--small Вопросы и варианты ответов:
+                h2.survey__title.title.title--small.container Вопросы и варианты ответов:
                 ol.survey__list
                     li.survey__item.container
+                        .star.survey__star-1
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-2
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-3
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-4
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-5
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
                         .survey__img
+                            picture
+                                source(srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp")
+                                source(srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png")
+                                source(srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp")
+                                source(srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png")
+                                source(srcset="images/survey/survey.webp" type="image/webp")
+                                img(src="images/survey/survey.png" alt="картинка" width="264" height="480")
                         .survey__info
                             h3.survey__question Самая популярная новогодняя песня?
                             .survey__inputs
@@ -69,8 +102,611 @@ block page
                                     span.survey__checkbox
                                     span.survey__choose «Новогодние игрушки» – Аркадий Хоралов
                             .survey__variant
-                                p Свой вариант
-                                input(type="text").survey__variant-field
+                                p.survey__variant-title Свой вариант
+                                .survey__variant-field
+                                    textarea(name="surveyText", cols="30", rows="10" placeholder="Свой вариант")
+                            button.survey__send.btn Отправить
+                    li.survey__item.container
+                        .star.survey__star-1
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-2
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-3
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-4
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-5
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .survey__img
+                            picture
+                                source(srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp")
+                                source(srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png")
+                                source(srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp")
+                                source(srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png")
+                                source(srcset="images/survey/survey.webp" type="image/webp")
+                                img(src="images/survey/survey.png" alt="картинка" width="264" height="480")
+                        .survey__info
+                            h3.survey__question Любимая новогодняя традиция?
+                            .survey__inputs
+                                label.survey__label
+                                    input(type="radio" name="song")
+                                    span.survey__checkbox
+                                    span.survey__choose Сжигать желание 
+                                label.survey__label
+                                    input(type="radio" name="song")
+                                    span.survey__checkbox
+                                    span.survey__choose Наряжать ёлку
+                                label.survey__label
+                                    input(type="radio" name="song")
+                                    span.survey__checkbox
+                                    span.survey__choose Готовить всей семьей праздничный стол
+                                label.survey__label
+                                    input(type="radio" name="song")
+                                    span.survey__checkbox
+                                    span.survey__choose Открывать в полночь подарки 
+                            .survey__variant
+                                p.survey__variant-title Свой вариант
+                                .survey__variant-field
+                                    textarea(name="surveyText", cols="30", rows="10" placeholder="Свой вариант")
+                            button.survey__send.btn Отправить
+                    li.survey__item.container
+                        .star.survey__star-1
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-2
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-3
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-4
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-5
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .survey__img
+                            picture
+                                source(srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp")
+                                source(srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png")
+                                source(srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp")
+                                source(srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png")
+                                source(srcset="images/survey/survey.webp" type="image/webp")
+                                img(src="images/survey/survey.png" alt="картинка" width="264" height="480")
+                        .survey__info
+                            h3.survey__question Главный символ Нового года – это …
+                            .survey__inputs
+                                label.survey__label
+                                    input(type="radio" name="symbol")
+                                    span.survey__checkbox
+                                    span.survey__choose Ёлка
+                                label.survey__label
+                                    input(type="radio" name="symbol")
+                                    span.survey__checkbox
+                                    span.survey__choose Дед Мороз
+                                label.survey__label
+                                    input(type="radio" name="symbol")
+                                    span.survey__checkbox
+                                    span.survey__choose Мандарины
+                                label.survey__label
+                                    input(type="radio" name="symbol")
+                                    span.survey__checkbox
+                                    span.survey__choose Животное года (Тигр)
+                            .survey__variant
+                                p.survey__variant-title Свой вариант
+                                .survey__variant-field
+                                    textarea(name="surveyText", cols="30", rows="10" placeholder="Свой вариант")
+                            button.survey__send.btn Отправить
+                    li.survey__item.container
+                        .star.survey__star-1
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-2
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-3
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-4
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-5
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .survey__img
+                            picture
+                                source(srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp")
+                                source(srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png")
+                                source(srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp")
+                                source(srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png")
+                                source(srcset="images/survey/survey.webp" type="image/webp")
+                                img(src="images/survey/survey.png" alt="картинка" width="264" height="480")
+                        .survey__info
+                            h3.survey__question Где вы в детстве находили свои подарки?
+                            .survey__inputs
+                                label.survey__label
+                                    input(type="radio" name="gifts")
+                                    span.survey__checkbox
+                                    span.survey__choose Под ёлкой
+                                label.survey__label
+                                    input(type="radio" name="gifts")
+                                    span.survey__checkbox
+                                    span.survey__choose В мешке с подарками
+                                label.survey__label
+                                    input(type="radio" name="gifts")
+                                    span.survey__checkbox
+                                    span.survey__choose В шкафу родителей
+                                label.survey__label
+                                    input(type="radio" name="gifts")
+                                    span.survey__checkbox
+                                    span.survey__choose Под подушкой
+                            .survey__variant
+                                p.survey__variant-title Свой вариант
+                                .survey__variant-field
+                                    textarea(name="surveyText", cols="30", rows="10" placeholder="Свой вариант")
+                            button.survey__send.btn Отправить
+                    li.survey__item.container
+                        .star.survey__star-1
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-2
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-3
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-4
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-5
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .survey__img
+                            picture
+                                source(srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp")
+                                source(srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png")
+                                source(srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp")
+                                source(srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png")
+                                source(srcset="images/survey/survey.webp" type="image/webp")
+                                img(src="images/survey/survey.png" alt="картинка" width="264" height="480")
+                        .survey__info
+                            h3.survey__question Блюдо, без которого не обойдется новогодний стол?
+                            .survey__inputs
+                                label.survey__label
+                                    input(type="radio" name="dish")
+                                    span.survey__checkbox
+                                    span.survey__choose Оливье
+                                label.survey__label
+                                    input(type="radio" name="dish")
+                                    span.survey__checkbox
+                                    span.survey__choose Мандарины
+                                label.survey__label
+                                    input(type="radio" name="dish")
+                                    span.survey__checkbox
+                                    span.survey__choose Селедка под шубой
+                                label.survey__label
+                                    input(type="radio" name="dish")
+                                    span.survey__checkbox
+                                    span.survey__choose Запеченная курица, индейка или утка
+                            .survey__variant
+                                p.survey__variant-title Свой вариант
+                                .survey__variant-field
+                                    textarea(name="surveyText", cols="30", rows="10" placeholder="Свой вариант")
+                            button.survey__send.btn Отправить
+                    li.survey__item.container
+                        .star.survey__star-1
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-2
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-3
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-4
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-5
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .survey__img
+                            picture
+                                source(srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp")
+                                source(srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png")
+                                source(srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp")
+                                source(srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png")
+                                source(srcset="images/survey/survey.webp" type="image/webp")
+                                img(src="images/survey/survey.png" alt="картинка" width="264" height="480")
+                        .survey__info
+                            h3.survey__question Лучший мой подарочек – это …
+                            .survey__inputs
+                                label.survey__label
+                                    input(type="radio" name="best")
+                                    span.survey__checkbox
+                                    span.survey__choose Ты
+                                label.survey__label
+                                    input(type="radio" name="best")
+                                    span.survey__checkbox
+                                    span.survey__choose Деньги
+                                label.survey__label
+                                    input(type="radio" name="best")
+                                    span.survey__checkbox
+                                    span.survey__choose Путевка на отдых
+                                label.survey__label
+                                    input(type="radio" name="best")
+                                    span.survey__checkbox
+                                    span.survey__choose Праздник в кругу родных
+                            .survey__variant
+                                p.survey__variant-title Свой вариант
+                                .survey__variant-field
+                                    textarea(name="surveyText", cols="30", rows="10" placeholder="Свой вариант")
+                            button.survey__send.btn Отправить
+                    li.survey__item.container
+                        .star.survey__star-1
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-2
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-3
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-4
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-5
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .survey__img
+                            picture
+                                source(srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp")
+                                source(srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png")
+                                source(srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp")
+                                source(srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png")
+                                source(srcset="images/survey/survey.webp" type="image/webp")
+                                img(src="images/survey/survey.png" alt="картинка" width="264" height="480")
+                        .survey__info
+                            h3.survey__question Самый популярный новогодний фильм?
+                            .survey__inputs
+                                label.survey__label
+                                    input(type="radio" name="movie")
+                                    span.survey__checkbox
+                                    span.survey__choose «Новогодняя» – Дискотека Авария
+                                label.survey__label
+                                    input(type="radio" name="movie")
+                                    span.survey__checkbox
+                                    span.survey__choose «Happy New Year» – ABBA
+                                label.survey__label
+                                    input(type="radio" name="movie")
+                                    span.survey__checkbox
+                                    span.survey__choose «Let It Snow» – Dean Martin
+                                label.survey__label
+                                    input(type="radio" name="movie")
+                                    span.survey__checkbox
+                                    span.survey__choose «Новогодние игрушки» – Аркадий Хоралов
+                            .survey__variant
+                                p.survey__variant-title Свой вариант
+                                .survey__variant-field
+                                    textarea(name="surveyText", cols="30", rows="10" placeholder="Свой вариант")
+                            button.survey__send.btn Отправить
+                    li.survey__item.container
+                        .star.survey__star-1
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-2
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-3
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-4
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-5
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .survey__img
+                            picture
+                                source(srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp")
+                                source(srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png")
+                                source(srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp")
+                                source(srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png")
+                                source(srcset="images/survey/survey.webp" type="image/webp")
+                                img(src="images/survey/survey.png" alt="картинка" width="264" height="480")
+                        .survey__info
+                            h3.survey__question Самый известный новогодний персонаж?
+                            .survey__inputs
+                                label.survey__label
+                                    input(type="radio" name="hero")
+                                    span.survey__checkbox
+                                    span.survey__choose Снеговик
+                                label.survey__label
+                                    input(type="radio" name="hero")
+                                    span.survey__checkbox
+                                    span.survey__choose Дед Мороз
+                                label.survey__label
+                                    input(type="radio" name="hero")
+                                    span.survey__checkbox
+                                    span.survey__choose Снегурочка
+                                label.survey__label
+                                    input(type="radio" name="hero")
+                                    span.survey__checkbox
+                                    span.survey__choose Гринч
+                            .survey__variant
+                                p.survey__variant-title Свой вариант
+                                .survey__variant-field
+                                    textarea(name="surveyText", cols="30", rows="10" placeholder="Свой вариант")
+                            button.survey__send.btn Отправить
+                    li.survey__item.container
+                        .star.survey__star-1
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-2
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-3
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-4
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-5
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .survey__img
+                            picture
+                                source(srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp")
+                                source(srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png")
+                                source(srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp")
+                                source(srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png")
+                                source(srcset="images/survey/survey.webp" type="image/webp")
+                                img(src="images/survey/survey.png" alt="картинка" width="264" height="480")
+                        .survey__info
+                            h3.survey__question Лучшее зимнее развлечение?
+                            .survey__inputs
+                                label.survey__label
+                                    input(type="radio" name="game")
+                                    span.survey__checkbox
+                                    span.survey__choose Кататься с горки
+                                label.survey__label
+                                    input(type="radio" name="game")
+                                    span.survey__checkbox
+                                    span.survey__choose Лепка снеговика
+                                label.survey__label
+                                    input(type="radio" name="game")
+                                    span.survey__checkbox
+                                    span.survey__choose Просмотр новогодних фильмов
+                                label.survey__label
+                                    input(type="radio" name="game")
+                                    span.survey__checkbox
+                                    span.survey__choose Игра в снежки
+                            .survey__variant
+                                p.survey__variant-title Свой вариант
+                                .survey__variant-field
+                                    textarea(name="surveyText", cols="30", rows="10" placeholder="Свой вариант")
+                            button.survey__send.btn Отправить
+                    li.survey__item.container
+                        .star.survey__star-1
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-2
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-3
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-4
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-5
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .survey__img
+                            picture
+                                source(srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp")
+                                source(srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png")
+                                source(srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp")
+                                source(srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png")
+                                source(srcset="images/survey/survey.webp" type="image/webp")
+                                img(src="images/survey/survey.png" alt="картинка" width="264" height="480")
+                        .survey__info
+                            h3.survey__question Самый классный Новый год - это когда встречаешь его с ...
+                            .survey__inputs
+                                label.survey__label
+                                    input(type="radio" name="meet")
+                                    span.survey__checkbox
+                                    span.survey__choose С семьей
+                                label.survey__label
+                                    input(type="radio" name="meet")
+                                    span.survey__checkbox
+                                    span.survey__choose С друзьями
+                                label.survey__label
+                                    input(type="radio" name="meet")
+                                    span.survey__checkbox
+                                    span.survey__choose С любимым человеком 
+                                label.survey__label
+                                    input(type="radio" name="meet")
+                                    span.survey__checkbox
+                                    span.survey__choose С хорошим настроением 
+                            .survey__variant
+                                p.survey__variant-title Свой вариант
+                                .survey__variant-field
+                                    textarea(name="surveyText", cols="30", rows="10" placeholder="Свой вариант")
+                            button.survey__send.btn Отправить
+                    li.survey__item.container
+                        .star.survey__star-1
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-2
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-3
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-4
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-5
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .survey__img
+                            picture
+                                source(srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp")
+                                source(srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png")
+                                source(srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp")
+                                source(srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png")
+                                source(srcset="images/survey/survey.webp" type="image/webp")
+                                img(src="images/survey/survey.png" alt="картинка" width="264" height="480")
+                        .survey__info
+                            h3.survey__question Самое красивое новогоднее украшение?
+                            .survey__inputs
+                                label.survey__label
+                                    input(type="radio" name="decoration")
+                                    span.survey__checkbox
+                                    span.survey__choose Дождик
+                                label.survey__label
+                                    input(type="radio" name="decoration")
+                                    span.survey__checkbox
+                                    span.survey__choose Гирлянда
+                                label.survey__label
+                                    input(type="radio" name="decoration")
+                                    span.survey__checkbox
+                                    span.survey__choose Я сам
+                                label.survey__label
+                                    input(type="radio" name="decoration")
+                                    span.survey__checkbox
+                                    span.survey__choose Советские ёлочные игрушки
+                            .survey__variant
+                                p.survey__variant-title Свой вариант
+                                .survey__variant-field
+                                    textarea(name="surveyText", cols="30", rows="10" placeholder="Свой вариант")
+                            button.survey__send.btn Отправить
+                    li.survey__item.container
+                        .star.survey__star-1
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-2
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-3
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-4
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-5
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .survey__img
+                            picture
+                                source(srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp")
+                                source(srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png")
+                                source(srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp")
+                                source(srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png")
+                                source(srcset="images/survey/survey.webp" type="image/webp")
+                                img(src="images/survey/survey.png" alt="картинка" width="264" height="480")
+                        .survey__info
+                            h3.survey__question Где спрятать подарки от «домашних» до Нового года?
+                            .survey__inputs
+                                label.survey__label
+                                    input(type="radio" name="hide")
+                                    span.survey__checkbox
+                                    span.survey__choose В шкафу
+                                label.survey__label
+                                    input(type="radio" name="hide")
+                                    span.survey__checkbox
+                                    span.survey__choose У друзей
+                                label.survey__label
+                                    input(type="radio" name="hide")
+                                    span.survey__checkbox
+                                    span.survey__choose На работе
+                                label.survey__label
+                                    input(type="radio" name="hide")
+                                    span.survey__checkbox
+                                    span.survey__choose У соседей
+                            .survey__variant
+                                p.survey__variant-title Свой вариант
+                                .survey__variant-field
+                                    textarea(name="surveyText", cols="30", rows="10" placeholder="Свой вариант")
+                            button.survey__send.btn Отправить
+                    li.survey__item.container
+                        .star.survey__star-1
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-2
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-3
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-4
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-5
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .survey__img
+                            picture
+                                source(srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp")
+                                source(srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png")
+                                source(srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp")
+                                source(srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png")
+                                source(srcset="images/survey/survey.webp" type="image/webp")
+                                img(src="images/survey/survey.png" alt="картинка" width="264" height="480")
+                        .survey__info
+                            h3.survey__question Самый плохой подарок от Тайного Санты?
+                            .survey__inputs
+                                label.survey__label
+                                    input(type="radio" name="bad")
+                                    span.survey__checkbox
+                                    span.survey__choose Его отсутствие
+                                label.survey__label
+                                    input(type="radio" name="bad")
+                                    span.survey__checkbox
+                                    span.survey__choose Носки
+                                label.survey__label
+                                    input(type="radio" name="bad")
+                                    span.survey__checkbox
+                                    span.survey__choose Все подарки хороши 
+                                label.survey__label
+                                    input(type="radio" name="bad")
+                                    span.survey__checkbox
+                                    span.survey__choose Конфеты
+                            .survey__variant
+                                p.survey__variant-title Свой вариант
+                                .survey__variant-field
+                                    textarea(name="surveyText", cols="30", rows="10" placeholder="Свой вариант")
+                            button.survey__send.btn Отправить
+                    li.survey__item.container
+                        .star.survey__star-1
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-2
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-3
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-4
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-5
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .survey__img
+                            picture
+                                source(srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp")
+                                source(srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png")
+                                source(srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp")
+                                source(srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png")
+                                source(srcset="images/survey/survey.webp" type="image/webp")
+                                img(src="images/survey/survey.png" alt="картинка" width="264" height="480")
+                        .survey__info
+                            h3.survey__question Любимый зимний элемент одежды?
+                            .survey__inputs
+                                label.survey__label
+                                    input(type="radio" name="clothes")
+                                    span.survey__checkbox
+                                    span.survey__choose Варежки
+                                label.survey__label
+                                    input(type="radio" name="clothes")
+                                    span.survey__checkbox
+                                    span.survey__choose Шуба
+                                label.survey__label
+                                    input(type="radio" name="clothes")
+                                    span.survey__checkbox
+                                    span.survey__choose Шарф
+                                label.survey__label
+                                    input(type="radio" name="clothes")
+                                    span.survey__checkbox
+                                    span.survey__choose Свитер
+                            .survey__variant
+                                p.survey__variant-title Свой вариант
+                                .survey__variant-field
+                                    textarea(name="surveyText", cols="30", rows="10" placeholder="Свой вариант")
+                            button.survey__send.btn Отправить
+                    li.survey__item.container
+                        .star.survey__star-1
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-2
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-3
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-4
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .star.survey__star-5
+                            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                        .survey__img
+                            picture
+                                source(srcset="images/survey/survey-mob.webp" media="(max-width: 767px)" type="image/webp")
+                                source(srcset="images/survey/survey-mob.png" media="(max-width: 767px)" type="image/png")
+                                source(srcset="images/survey/survey-tab.webp" media="(max-width: 900px)" type="image/webp")
+                                source(srcset="images/survey/survey-tab.png" media="(max-width: 900px)" type="image/png")
+                                source(srcset="images/survey/survey.webp" type="image/webp")
+                                img(src="images/survey/survey.png" alt="картинка" width="264" height="480")
+                        .survey__info
+                            h3.survey__question Где лучше всего проводить зиму?
+                            .survey__inputs
+                                label.survey__label
+                                    input(type="radio" name="winter")
+                                    span.survey__checkbox
+                                    span.survey__choose Дома
+                                label.survey__label
+                                    input(type="radio" name="winter")
+                                    span.survey__checkbox
+                                    span.survey__choose В горах
+                                label.survey__label
+                                    input(type="radio" name="winter")
+                                    span.survey__checkbox
+                                    span.survey__choose За городом 
+                                label.survey__label
+                                    input(type="radio" name="winter")
+                                    span.survey__checkbox
+                                    span.survey__choose На курорте 
+                            .survey__variant
+                                p.survey__variant-title Свой вариант
+                                .survey__variant-field
+                                    textarea(name="surveyText", cols="30", rows="10" placeholder="Свой вариант")
                             button.survey__send.btn Отправить
                                     
 
