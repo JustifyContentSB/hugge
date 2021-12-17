@@ -87,6 +87,14 @@
         margin-bottom: 42px
     &--pro
         padding-bottom: 20px
+    &--stream
+        margin-bottom: 25px
+        .header
+            &__star
+                &-1
+                    width: 98px
+                    left: auto
+                    right: 16%
 
 @media screen and (max-width: 1800px)
     .header
@@ -105,6 +113,13 @@
             width: 400px
         &__toy
             width: 300px
+        &--stream
+            .header
+                &__star
+                    &-1
+                        width: 78px
+                        top: 75%
+                        right: 16%
 
 
 @media screen and (max-width: 1279px)
@@ -188,7 +203,7 @@
             padding-top: 80px
             flex-direction: column
             grid-gap: 20px
-        &--mts, &--mood, &--pro
+        &--mts, &--mood, &--pro, &--stream
             margin-bottom: 50px
             .header
                 &__burger
@@ -218,6 +233,12 @@
         &__text
             font-size: 16px
             line-height: 150%
+        &--stream
+            margin-bottom: 35px
+            padding-bottom: 10px
+            .header
+                &__star
+                    width: 42px
 
 @media screen and (max-width: 500px)
     .header
@@ -236,3 +257,8 @@
                 display: none
             &-2
                 top: 11%
+        &--stream
+            .header
+                &__star
+                    &-1
+                        display: block

@@ -1,0 +1,140 @@
+.stream
+   text-align: center
+   position: relative
+   &__star
+      &-1
+         top: 1%
+         left: 4%
+      &-2
+         width: 42px
+         top: 0
+         left: 29%
+      &-3
+         top: 32%
+         left: 15%
+      &-4
+         width: 42px
+         top: 65%
+         left: 5%
+      &-5
+         width: 98px
+         bottom: 7%
+         left: 14%
+      &-6
+         bottom: 7%
+         right: 11%
+      &-7
+         width: 61px
+         top: 21%
+         right: 15%
+      &-8
+         width: 42px
+         top: 48%
+         right: 5%
+   &__header
+      width: 100%
+      max-width: 976px
+      margin: 0 auto
+      margin-bottom: 20px
+      font-size: 18px
+      line-height: 180%
+   &__title
+      margin-bottom: 10px
+   &__text
+      font-size: 18px
+      line-height: 180%
+   &__video
+      position: relative
+      &-img
+         img
+            width: 100%
+            height: auto
+      &-content
+         width: 72% 
+         max-width: 913px
+         height: 514px
+         background: url('../images/icons/play.svg') no-repeat center, #000
+         position: absolute
+         top: 47%
+         left: 51.5%
+         transform: translate(-50%, -50%)
+
+@media screen and (max-width: 1500px)
+   .stream
+      &__star
+         &-4
+            left: 3%
+         &-5
+            left: 10%
+         &-6
+            right: 5%
+         &-7
+            top: 24%
+            right: 4%
+         &-8
+            right: 2%
+
+@media screen and (max-width: 1279px)
+   .stream
+      &__star
+         &-3, &-4, &-7
+            display: none
+         &-5
+            left: 3%
+            bottom: 2%
+         &-6
+            right: 3%
+            bottom: 3%
+         &-8
+            right: 2%
+      &__video
+         &-content
+            height: 450px
+
+@media screen and (max-width: 1000px)
+   .stream
+      &__star
+         &-1
+            top: 0
+         &-2
+            display: none
+      &__video
+         &-content
+            height: 350px
+
+@media screen and (max-width: 767px)
+   .stream
+      &__star
+         &-1, &-5, &-6
+            display: none
+         &-8
+            width: 42px
+            top: 0
+            right: auto
+            left: 3%
+      &__header
+         margin-bottom: 30px
+      &__text
+         font-size: 16px
+         line-height: 150%
+      &__video
+         &-content
+            height: 300px
+
+@media screen and (max-width: 600px)
+   .stream
+      &__video
+         &-content
+            height: 200px
+
+@media screen and (max-width: 460px)
+   .stream
+      &__inner
+         padding: 0
+      &__header
+         padding: 0 16px
+      &__video
+         &-content
+            width: calc(100% - 32px)
+            height: 183px
+            top: 52%
