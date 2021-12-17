@@ -1,0 +1,294 @@
+.mood
+   margin-bottom: 85px
+   position: relative
+   .star
+      z-index: 1
+   &__star
+      &-1
+         width: 42px
+         height: 48px
+         top: 10%
+         left: 140px
+      &-2
+         width: 61px
+         height: 70px
+         right: 36%
+         top: 0
+      &-3
+         width: 61px
+         height: 70px
+         right: 5%
+         top: 30%
+      &-4
+         width: 42px
+         height: 48px
+         right: 20%
+         top: 40%
+      &-5
+         width: 76px
+         height: 87px
+         right: 40%
+         top: 40%
+      &-6
+         width: 98px
+         height: 112px
+         left: 62px
+         top: 45%
+      &-7
+         width: 42px
+         height: 48px
+         top: 70%
+         left: 43%
+      &-8
+         width: 98px
+         height: 112px
+         right: 20%
+         top: 70%
+      &-9
+         width: 61px
+         height: 70px
+         left: 10%
+         bottom: 0
+      &-10
+         width: 42px
+         height: 48px
+         right: 10%
+         bottom: 0
+   &__about
+      margin-bottom: 68px
+      display: flex
+      align-items: flex-start
+   &__content
+      width: 100%
+      max-width: 630px
+   &__title
+      margin-bottom: 46px
+      br
+         display: none
+   &__info
+      &-title
+         margin-bottom: 5px
+         font-size: 24px
+         font-weight: 500
+      &-text
+         margin-bottom: 30px
+         font-size: 18px
+         line-height: 180%
+         &:last-child
+            margin-bottom: 0
+   &__img
+      margin-top: -80px
+      position: relative
+      right: -110px
+   &__small
+      &-title
+         margin-bottom: 32px
+   &__music
+      width: 100%
+      max-width: 1220px
+      margin-bottom: 88px
+      display: flex
+      justify-content: space-between
+      &-item
+         width: 100%
+         max-width: 568px
+         position: relative
+      &-note
+         position: absolute
+         right: 160px
+         top: -42px
+         &__small
+            position: absolute
+            right: 80px
+            top: -52px
+      &-content
+         margin-bottom: 40px
+         &:last-child
+            margin-bottom: 0
+      &-text
+         margin-bottom: 7px
+         font-size: 18px
+         line-height: 180%
+         font-weight: 400
+      &-link
+         font-size: 14px
+         line-height: 150%
+         color: var(--textColor)
+         font-size: 14px
+         line-height: 150%
+         text-decoration: underline
+         &:hover,
+         &:focus
+            text-decoration: none
+         &:active
+            opacity: 0.6
+   &__video
+      &-list
+         display: flex
+         align-items: flex-start
+         grid-gap: 20px
+         flex-wrap: wrap
+      &-item
+         max-width: 305px
+         width: calc(25% - 15px)
+      &-content
+         width: 100%
+         min-height: 172px
+         margin-bottom: 16px
+         background: url('../images/icons/play.svg') no-repeat center, #000
+         cursor: pointer
+      &-title
+         font-weight: 400
+         font-size: 18px
+         line-height: 150%
+
+@media screen and (max-width: 1800px)
+   .mood
+      &__star
+         &-1
+            left: 2%
+         &-3
+            top: 35%
+         &-4
+            top: 43%
+         &-6
+            width: 60px
+            height: 70px
+            left: 2%
+         &-9
+            left: 2%
+            bottom: -5%
+         &-10
+            right: 3%
+            bottom: -3%
+
+@media screen and (max-width: 1540px)
+   .mood
+      &__img
+         width: 600px
+         margin-top: 0
+         right: 0
+      &__star
+         &-1
+            display: none
+
+@media screen and (max-width: 1280px)
+   .mood
+      &__star
+         &-5, &-6
+            display: none
+
+@media screen and (max-width: 1200px)
+   .mood
+      &__content
+         max-width: 560px
+      &__video
+         position: relative
+         &-item
+            max-width: 50%
+            width: calc(50% - 10px)
+      &__star
+         &-9
+            width: 42px
+            height: 48px
+            top: 0
+            right: 0
+            left: auto
+            bottom: auto
+         &-10
+            width: 27px
+            height: 31px
+            top: -5%
+            right: 45%
+            left: auto
+            bottom: auto
+         &-7, &-8
+            display: none
+
+@media screen and (max-width: 1000px)
+   .mood
+      &__about
+         position: relative
+      &__img
+         width: 260px
+         position: absolute
+         z-index: 5
+         right: -16px
+         top: -50px
+      &__content
+         max-width: 100%
+         padding-right: 260px
+         position: relative
+         z-index: 10
+      &__star
+         &-2
+            width: 42px
+            height: 48px
+            top: -60px
+         &-3, &-4
+            display: none
+      &__music
+         flex-direction: column
+         &-item
+            margin-bottom: 63px
+            &:last-child
+               margin-bottom: 0
+      &__video
+         &-content
+            margin-bottom: 10px
+         &-title
+            font-size: 16px
+
+@media screen and (max-width: 767px)
+   .mood
+      &__img
+         width: 203px
+         top: -55px
+      &__content
+         padding-right: 0
+      &__title
+         margin-bottom: 26px
+         padding-right: 210px
+         br
+            display: inline
+      &__music
+         margin-bottom: 65px
+      &__video
+         &-title
+            font-size: 14px
+      &__small-title
+         margin-bottom: 22px
+
+@media screen and (max-width: 560px)
+   .mood
+      &__star
+         &-2
+            top: -80px
+            right: 40%
+      &__video
+         &-list
+            display: block
+            grid-gap: 0
+         &-item
+            width: 100%
+            max-width: 100%
+            margin-bottom: 38px
+      &__music
+         &-note
+            width: 40px
+         &-text
+            font-size: 14px
+         &-link
+            font-size: 12px
+
+@media screen and (max-width: 380px)
+   .mood
+      &__img
+         width: 170px
+         top: -40px
+
+@media screen and (max-width: 340px)
+   .mood
+      &__music
+         &-link
+            font-size: 11px

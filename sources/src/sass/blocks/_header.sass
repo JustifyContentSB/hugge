@@ -2,6 +2,7 @@
     padding-top: 30px
     padding-bottom: 30px
     position: relative
+    z-index: 1000
     &__left
         position: absolute
         top: 0
@@ -82,6 +83,8 @@
                 margin-right: 83px
             &__nav
                 margin-bottom: 0
+    &--mood
+        margin-bottom: 42px
 
 @media screen and (max-width: 1800px)
     .header
@@ -127,9 +130,6 @@
             .header
                 &__mts
                     margin-right: 50px
-
-@media screen and (max-width: 900px)
-    .header
         &__burger
             display: block
             padding: 10px 6px
@@ -186,7 +186,7 @@
             padding-top: 80px
             flex-direction: column
             grid-gap: 20px
-        &--mts
+        &--mts, &--mood
             margin-bottom: 50px
             .header
                 &__burger
@@ -202,6 +202,8 @@
 @media screen and (max-width: 767px)
     .header
         padding: 10px 0 80px
+        &--mood
+            padding-bottom: 30px
         &--mts
             padding-bottom: 0
         &__mts
