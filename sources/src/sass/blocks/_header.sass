@@ -95,6 +95,32 @@
                     width: 98px
                     left: auto
                     right: 16%
+    &--cooking
+        min-height: 272px
+        .star
+            display: none
+    &__design
+        width: 531px
+        position: absolute
+        top: -30px
+        left: -150px
+    &__date
+        margin-bottom: 30px
+    &__blockquote
+        margin: 0
+        text-align: center
+        &-cite
+            font-size: 24px
+            font-weight: 500
+    &__close
+        width: 50px
+        height: 50px
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        right: 22px
+        top: -20px
 
 @media screen and (max-width: 1800px)
     .header
@@ -120,7 +146,9 @@
                         width: 78px
                         top: 75%
                         right: 16%
-
+        &__design
+            width: 400px
+            left: 0
 
 @media screen and (max-width: 1279px)
     .header
@@ -134,6 +162,10 @@
         &__logo
             margin-left: 0
             max-width: 300px
+        &--cooking
+            min-height: auto
+        &__design
+            width: 300px
 
 @media screen and (max-width: 1100px)
     .header
@@ -216,6 +248,11 @@
                     top: 0
                     left: 16px
 
+@media screen and (max-width: 900px)
+    .header
+        &__design
+            width: 250px
+
 @media screen and (max-width: 767px)
     .header
         padding: 10px 0 80px
@@ -239,6 +276,38 @@
             .header
                 &__star
                     width: 42px
+        &__design
+            display: none
+        &--cooking
+            padding-bottom: 30px
+            padding-top: 0
+            .header
+                &__inner
+                    padding-top: 74px
+            .header
+                &__star
+                    &-1
+                        display: block
+                        width: 65px
+                        top: -20px
+                        left: 20%
+                    &-2
+                        display: block
+                        width: 27px
+                        top: auto
+                        bottom: 3%
+                        left: 6%
+        &__date
+            margin-bottom: 15px
+        &__blockquote
+            width: 100%
+            max-width: 250px
+            &-cite
+                font-size: 18px
+            &-author
+                font-size: 14px
+        &__close
+            top: 0
 
 @media screen and (max-width: 500px)
     .header

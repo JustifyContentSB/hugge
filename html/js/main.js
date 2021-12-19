@@ -135,4 +135,12 @@ $(document).ready(function () {
     e.preventDefault();
     $(this).toggleClass('gallery__like-btn--clicked');
   });
+
+  if ($(window).width() < 768) {
+    var cookingImagesSwiper = new Swiper(".cooking__advice-images", {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      loop: false
+    });
+  }
 }); // Your functions here

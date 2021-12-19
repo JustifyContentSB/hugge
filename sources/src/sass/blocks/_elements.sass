@@ -7,6 +7,12 @@
    &--small
       font-size: 48px
 
+.text
+   font-size: 18px
+   line-height: 180%
+   &--small
+      font-size: 16px
+
 .close
    position: absolute
    width: 30px
@@ -50,6 +56,10 @@
 
 .star
    position: absolute
+   animation-name: itemRotate
+   animation-duration: 5s
+   animation-timing-function: linear
+   animation-iteration-count: infinite
    img
       width: 100%
    &__gold
@@ -62,3 +72,8 @@
       font-size: 48px
       &--small
          font-size: 36px
+   .text
+      font-size: 16px
+      line-height: 150%
+      &--small
+         font-size: 14px

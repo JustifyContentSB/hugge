@@ -1,0 +1,202 @@
+.cooking
+   position: relative
+   &__top
+      margin-bottom: 105px
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: flex-start
+   &__video
+      width: 599px
+      min-width: 599px
+      height: 338px
+      background: url('../images/icons/play.svg') no-repeat center, #000
+   &__info
+      width: calc(100% - 650px)
+      padding-top: 10px
+   &__title
+      margin-bottom: 14px
+   &__heading
+      margin-bottom: 35px
+   &__text
+      padding-right: 48px
+   &__advice
+      margin-bottom: 60px
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      &-list
+         width: 100%
+         max-width: 572px
+         margin: 0
+         padding: 0 30px 0 16px
+      &-item
+         margin-bottom: 23px
+         &:last-child
+            margin-bottom: 0
+      &-images
+         max-width: 650px
+         min-width: 650px
+         &__wrapper
+            width: 100%
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+         &__item
+            width: 100%
+            max-width: 305px
+            height: 192px
+            margin-bottom: 32px
+            border-radius: 6px
+            position: relative
+            overflow: hidden
+            display: flex
+            justify-content: center
+            align-items: center
+         &__img
+            img
+               width: 100%
+               height: auto
+         &__bottom
+            position: absolute
+            bottom: 0
+            left: 0
+            right: 0
+            height: 50px
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 9.52%, rgba(0, 0, 0, 0.32) 100%)
+            border-radius: 6px
+         &__zoom
+            width: 20px
+            height: 20px
+            position: absolute
+            right: 14px
+            top: 50%
+            transform: translateY(-50%)
+   &__wishes
+      width: 100%
+      max-width: 630px
+      margin: 0 auto
+      text-align: center
+   &__star
+      &-1
+         top: 22%
+         left: 4%
+      &-2
+         width: 76px
+         top: 45%
+         left: 7%
+      &-3
+         width: 42px
+         bottom: 8%
+         left: 18%
+      &-4
+         width: 98px
+         right: 18%
+         bottom: 5%
+      &-5
+         width: 42px
+         right: 17%
+         bottom: 57%
+      &-6
+         right: 30%
+         bottom: 62%
+      &-7
+         width: 98px
+         top: 0
+         right: 8%
+      &-8, &-9
+         display: none
+
+@media screen and (max-width: 1700px)
+   .cooking
+      &__star
+         &-1, &-2
+            display: none
+         &-4
+            width: 70px
+         &-7
+            width: 70px
+            right: 3%
+
+@media screen and (max-width: 1365px)
+   .cooking
+      &__star
+         &-7
+            display: none
+
+@media screen and (max-width: 1200px)
+   .cooking
+      &__top
+         max-width: 600px
+         flex-direction: column-reverse
+         align-items: center
+      &__info
+         width: 100%
+         margin-bottom: 30px
+      &__advice
+         margin-bottom: 20px
+         flex-direction: column
+         &-list
+            margin-bottom: 30px
+      &__star
+         &-6
+            display: none
+
+@media screen and (max-width: 1000px)
+   .cooking
+      &__star
+         &-4
+            display: none
+
+@media screen and (max-width: 767px)
+   .cooking
+      margin-bottom: 30px
+      overflow-x: hidden
+      &__box
+         position: relative
+      &__star
+         &-5, &-3
+            display: none
+         &-8, &-9
+            display: block
+         &-8
+            width: 65px
+            top: -8%
+            left: 65%
+            transform: translateX(-50%)
+         &-9
+            width: 27px
+            right: 0
+            top: 0
+      &__top
+         margin-bottom: 75px
+      &__video
+         width: 100%
+         min-width: auto
+      &__heading
+         margin-bottom: 23px
+      &__text
+         padding-right: 0
+      &__advice
+         &-list
+            padding-right: 0
+         &-images
+            max-width: 100%
+            min-width: auto
+            &__wrapper
+               flex-wrap: nowrap
+            &__item
+               min-width: 238px
+               width: 238px
+               height: 118px
+               margin: 0
+            &__bottom
+               height: 31px
+            &__zoom
+               width: 16px
+               height: 16px
+
+@media screen and (max-width: 460px)
+   .cooking
+      &__video
+         height: 185px

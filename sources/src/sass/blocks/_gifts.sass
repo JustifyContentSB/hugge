@@ -1,5 +1,8 @@
 .gifts
    position: relative
+   &--cooking
+      .star
+         display: none
    &__star
       &-1
          width: 128px
@@ -23,6 +26,16 @@
       &__star
          &-1
             width: 54px
+      &--cooking
+         .star
+            display: block
+         .gifts
+            &__star
+               &-1
+                  width: 27px
+                  left: 28px
+               &-2
+                  width: 54px
 
 @media screen and (max-width: 460px)
    .gifts

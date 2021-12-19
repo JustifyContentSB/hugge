@@ -903,6 +903,13 @@ picture {
 .title--small {
   font-size: 48px
 }
+.text {
+  font-size: 18px;
+  line-height: 180%
+}
+.text--small {
+  font-size: 16px
+}
 .close {
   position: absolute;
   width: 30px;
@@ -957,7 +964,15 @@ picture {
   background-image: url(../images/icons/btn-hover.svg)
 }
 .star {
-  position: absolute
+  position: absolute;
+  -webkit-animation-name: itemRotate;
+  animation-name: itemRotate;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite
 }
 .star img {
   width: 100%
@@ -974,6 +989,13 @@ picture {
   }
   .title--small {
     font-size: 36px
+  }
+  .text {
+    font-size: 16px;
+    line-height: 150%
+  }
+  .text--small {
+    font-size: 14px
   }
 }
 @-webkit-keyframes starsFlashing {
@@ -1167,6 +1189,45 @@ picture {
   left: auto;
   right: 16%
 }
+.header--cooking {
+  min-height: 272px
+}
+.header--cooking .star {
+  display: none
+}
+.header__design {
+  width: 531px;
+  position: absolute;
+  top: -30px;
+  left: -150px
+}
+.header__date {
+  margin-bottom: 30px
+}
+.header__blockquote {
+  margin: 0;
+  text-align: center
+}
+.header__blockquote-cite {
+  font-size: 24px;
+  font-weight: 500
+}
+.header__close {
+  width: 50px;
+  height: 50px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  right: 22px;
+  top: -20px
+}
 @media screen and (max-width:1800px) {
   .header__left {
     width: 500px
@@ -1193,6 +1254,10 @@ picture {
     top: 75%;
     right: 16%
   }
+  .header__design {
+    width: 400px;
+    left: 0
+  }
 }
 @media screen and (max-width:1279px) {
   .header__left {
@@ -1208,6 +1273,12 @@ picture {
   .header__logo {
     margin-left: 0;
     max-width: 300px
+  }
+  .header--cooking {
+    min-height: auto
+  }
+  .header__design {
+    width: 300px
   }
 }
 @media screen and (max-width:1100px) {
@@ -1313,6 +1384,11 @@ picture {
     left: 16px
   }
 }
+@media screen and (max-width:900px) {
+  .header__design {
+    width: 250px
+  }
+}
 @media screen and (max-width:767px) {
   .header {
     padding: 10px 0 80px
@@ -1344,6 +1420,45 @@ picture {
   }
   .header--stream .header__star {
     width: 42px
+  }
+  .header__design {
+    display: none
+  }
+  .header--cooking {
+    padding-bottom: 30px;
+    padding-top: 0
+  }
+  .header--cooking .header__inner {
+    padding-top: 74px
+  }
+  .header--cooking .header__star-1 {
+    display: block;
+    width: 65px;
+    top: -20px;
+    left: 20%
+  }
+  .header--cooking .header__star-2 {
+    display: block;
+    width: 27px;
+    top: auto;
+    bottom: 3%;
+    left: 6%
+  }
+  .header__date {
+    margin-bottom: 15px
+  }
+  .header__blockquote {
+    width: 100%;
+    max-width: 250px
+  }
+  .header__blockquote-cite {
+    font-size: 18px
+  }
+  .header__blockquote-author {
+    font-size: 14px
+  }
+  .header__close {
+    top: 0
   }
 }
 @media screen and (max-width:500px) {
@@ -1780,6 +1895,9 @@ picture {
 .gifts {
   position: relative
 }
+.gifts--cooking .star {
+  display: none
+}
 .gifts__star-1 {
   width: 128px;
   top: -12%;
@@ -1799,6 +1917,16 @@ picture {
 }
 @media screen and (max-width:767px) {
   .gifts__star-1 {
+    width: 54px
+  }
+  .gifts--cooking .star {
+    display: block
+  }
+  .gifts--cooking .gifts__star-1 {
+    width: 27px;
+    left: 28px
+  }
+  .gifts--cooking .gifts__star-2 {
     width: 54px
   }
 }
@@ -2482,10 +2610,10 @@ picture {
   .gallery__next {
     width: 15px;
     right: auto;
-    left: 10px
+    left: 13px
   }
   .gallery__next::after {
-    content: "prev"
+    content: "next"
   }
 }
 .mts {
@@ -2647,6 +2775,15 @@ picture {
     -ms-flex-align: center;
     align-items: center
   }
+  .mts__title {
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start
+  }
+  .mts__text {
+    line-height: 150%;
+    font-weight: 500
+  }
   .mts__star-3 {
     display: none
   }
@@ -2659,11 +2796,11 @@ picture {
     display: none
   }
   .mts__star-2 {
-    width: 70px;
-    height: 80px;
+    width: 60px;
+    height: auto;
     left: auto;
     right: 0;
-    bottom: -15%
+    bottom: -8%
   }
   .mts__star-4 {
     right: auto;
@@ -3005,6 +3142,13 @@ picture {
   }
   .mood__small-title {
     margin-bottom: 22px
+  }
+  .mood__info-title {
+    font-size: 18px
+  }
+  .mood__info-text {
+    font-size: 16px;
+    line-height: 150%
   }
 }
 @media screen and (max-width:560px) {
@@ -3661,7 +3805,286 @@ picture {
     top: 52%
   }
 }
-footer {
-  padding: 20px
+.cooking {
+  position: relative
+}
+.cooking__top {
+  margin-bottom: 105px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start
+}
+.cooking__video {
+  width: 599px;
+  min-width: 599px;
+  height: 338px;
+  background: url(../images/icons/play.svg) no-repeat center,#000
+}
+.cooking__info {
+  width: calc(100% - 650px);
+  padding-top: 10px
+}
+.cooking__title {
+  margin-bottom: 14px
+}
+.cooking__heading {
+  margin-bottom: 35px
+}
+.cooking__text {
+  padding-right: 48px
+}
+.cooking__advice {
+  margin-bottom: 60px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start
+}
+.cooking__advice-list {
+  width: 100%;
+  max-width: 572px;
+  margin: 0;
+  padding: 0 30px 0 16px
+}
+.cooking__advice-item {
+  margin-bottom: 23px
+}
+.cooking__advice-item:last-child {
+  margin-bottom: 0
+}
+.cooking__advice-images {
+  max-width: 650px;
+  min-width: 650px
+}
+.cooking__advice-images__wrapper {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+.cooking__advice-images__item {
+  width: 100%;
+  max-width: 305px;
+  height: 192px;
+  margin-bottom: 32px;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.cooking__advice-images__img img {
+  width: 100%;
+  height: auto
+}
+.cooking__advice-images__bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: linear-gradient(180deg,rgba(0,0,0,0) 9.52%,rgba(0,0,0,.32) 100%);
+  border-radius: 6px
+}
+.cooking__advice-images__zoom {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%)
+}
+.cooking__wishes {
+  width: 100%;
+  max-width: 630px;
+  margin: 0 auto;
+  text-align: center
+}
+.cooking__star-1 {
+  top: 22%;
+  left: 4%
+}
+.cooking__star-2 {
+  width: 76px;
+  top: 45%;
+  left: 7%
+}
+.cooking__star-3 {
+  width: 42px;
+  bottom: 8%;
+  left: 18%
+}
+.cooking__star-4 {
+  width: 98px;
+  right: 18%;
+  bottom: 5%
+}
+.cooking__star-5 {
+  width: 42px;
+  right: 17%;
+  bottom: 57%
+}
+.cooking__star-6 {
+  right: 30%;
+  bottom: 62%
+}
+.cooking__star-7 {
+  width: 98px;
+  top: 0;
+  right: 8%
+}
+.cooking__star-8,
+.cooking__star-9 {
+  display: none
+}
+@media screen and (max-width:1700px) {
+  .cooking__star-1,
+  .cooking__star-2 {
+    display: none
+  }
+  .cooking__star-4 {
+    width: 70px
+  }
+  .cooking__star-7 {
+    width: 70px;
+    right: 3%
+  }
+}
+@media screen and (max-width:1365px) {
+  .cooking__star-7 {
+    display: none
+  }
+}
+@media screen and (max-width:1200px) {
+  .cooking__top {
+    max-width: 600px;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+  }
+  .cooking__info {
+    width: 100%;
+    margin-bottom: 30px
+  }
+  .cooking__advice {
+    margin-bottom: 20px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column
+  }
+  .cooking__advice-list {
+    margin-bottom: 30px
+  }
+  .cooking__star-6 {
+    display: none
+  }
+}
+@media screen and (max-width:1000px) {
+  .cooking__star-4 {
+    display: none
+  }
+}
+@media screen and (max-width:767px) {
+  .cooking {
+    margin-bottom: 30px;
+    overflow-x: hidden
+  }
+  .cooking__box {
+    position: relative
+  }
+  .cooking__star-3,
+  .cooking__star-5 {
+    display: none
+  }
+  .cooking__star-8,
+  .cooking__star-9 {
+    display: block
+  }
+  .cooking__star-8 {
+    width: 65px;
+    top: -8%;
+    left: 65%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+  }
+  .cooking__star-9 {
+    width: 27px;
+    right: 0;
+    top: 0
+  }
+  .cooking__top {
+    margin-bottom: 75px
+  }
+  .cooking__video {
+    width: 100%;
+    min-width: auto
+  }
+  .cooking__heading {
+    margin-bottom: 23px
+  }
+  .cooking__text {
+    padding-right: 0
+  }
+  .cooking__advice-list {
+    padding-right: 0
+  }
+  .cooking__advice-images {
+    max-width: 100%;
+    min-width: auto
+  }
+  .cooking__advice-images__wrapper {
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap
+  }
+  .cooking__advice-images__item {
+    min-width: 238px;
+    width: 238px;
+    height: 118px;
+    margin: 0
+  }
+  .cooking__advice-images__bottom {
+    height: 31px
+  }
+  .cooking__advice-images__zoom {
+    width: 16px;
+    height: 16px
+  }
+}
+@media screen and (max-width:460px) {
+  .cooking__video {
+    height: 185px
+  }
 }
 /*# sourceMappingURL=maps/main.css.map */
