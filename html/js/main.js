@@ -19,6 +19,29 @@ $(document).ready(function () {
     });
   }
 
+  $('.gallery__like-btn').on('click', function (e) {
+    e.preventDefault();
+    $(this).toggleClass('gallery__like-btn--clicked');
+  });
+
+  if ($(window).width() < 768) {
+    var cookingImagesSwiper = new Swiper(".cooking__advice-images", {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      loop: false
+    });
+  }
+
+  $('.clock__item').on('click', function (e) {
+    e.preventDefault();
+    $('body').addClass('no-scroll');
+    $('.notice').addClass('notice--active');
+  });
+  $('.notice__close').on('click', function (e) {
+    e.preventDefault();
+    $('body').removeClass('no-scroll');
+    $('.notice').removeClass('notice--active');
+  });
   var gallerySwiper1 = new Swiper(".gallery-1 .gallery__swiper", {
     slidesPerView: 1,
     slidesPerGroup: 1,
@@ -131,16 +154,4 @@ $(document).ready(function () {
       nextEl: ".gallery-4 .gallery__next"
     }
   });
-  $('.gallery__like-btn').on('click', function (e) {
-    e.preventDefault();
-    $(this).toggleClass('gallery__like-btn--clicked');
-  });
-
-  if ($(window).width() < 768) {
-    var cookingImagesSwiper = new Swiper(".cooking__advice-images", {
-      slidesPerView: 'auto',
-      spaceBetween: 30,
-      loop: false
-    });
-  }
-}); // Your functions here
+});

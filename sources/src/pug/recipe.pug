@@ -1,0 +1,123 @@
+extends base/_layout
+block head
+    title Готовка
+block page
+    header.header.header--cooking.header--recipe
+        .star.header__star.header__star-1
+            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+        .star.header__star.header__star-2
+            img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+        .header__inner.container
+            .header__design
+                picture
+                    source(srcset="images/header/header-cooking.webp" type="image/webp")
+                    img(src="images/header/header-cooking.png" alt="картинка" width="531" height="272")
+            a.header__close(href="#")
+                img(src="images/icons/close.svg", alt="закрыть")
+            p.header__date.title 21 декабря
+            blockquote.header__blockquote
+                p.header__blockquote-cite.
+                    «Искусство быть счастливым заключается #[br] в способности находить счастье в простых вещах».
+                p.header__blockquote-author Генри Уорд Бичер
+
+    main.main.main--visible
+        section.cooking.cooking--recipe
+            .star.cooking__star-1
+                img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+            .star.cooking__star-2
+                img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+            .star.cooking__star-3
+                img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+            .star.cooking__star-4
+                img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+            .star.cooking__star-5
+                img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+            .star.cooking__star-6
+                img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+            .star.cooking__star-7
+                img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+            .cooking__inner.container
+                .cooking__top-wrapper
+                    h1.cooking__title.title.title--small Шоколадный брауни на вашей кухне
+                    .cooking__top
+                        .cooking__video
+                        .cooking__info
+                            p.cooking__text.text.text--small.
+                                Главным секретом датского счастья является замедление и присутствие в моменте. Поэтому вместо того, чтобы кулинарить весь день перед приходом гостей, а потом нервничать, переживая, как подать к столу всё вовремя, приготовьте блюдо все вместе. #[br]
+                                Хюгге-настроение не обойдётся без запаха свежевыпеченного пирога или булочки. На самом деле десерт, сделанный своими руками, всегда кажется вкуснее! Можно также приготовить что-то вместе с друзьями и близкими. Это поможет совместить два компонента хюгге вместе: общение и выпечку! Испачкать руки от замешивания теста для выпечки, варить карамель, долго тушить мясо, наполняя квартиру зазывающими ароматами – это всё очень уютно.
+                        p.cooking__today Сегодня шеф-повар Игорь Чёрный поделится рецептом вкуснейшего брауни. #[br] Что для него понадобится:
+
+                section.cooking__box
+                    h2.cooking__heading.title.title--small Ингредиенты:
+                    img.cooking__cake(src="images/cooking/cake.png", alt="торт" width="258" height="267")
+                    .component
+                        .component__box
+                            .star.component__star-1
+                                img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                            .star.component__star-2
+                                img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                            .component__img
+                                picture
+                                    source(srcset="images/cooking/component-1.webp" type="image/webp")
+                                    img(src="images/cooking/component-1.png" alt="картинка" width="356" height="176")
+                            .component__info
+                                h3.component__title Для теста:
+                                ul.component__list
+                                    li 1 ст. (220 гр.) сливочного масла, растопленного и остывшего + дополнительно для смазывания форм
+                                    li 1,5 ст. сахара
+                                    li 1 ч. л. ванильного экстракта
+                                    li 3 больших яйца
+                                    li 1 ст. муки
+                                    li 0,5 ст. несладкого какао-порошка
+                                    li 1 ч. л. мелкой соли
+                                    li 0,5 ч. л. разрыхлителя теста
+                                    li 3/4 ст. тёмного шоколада в гранулах
+                                    li 16 кусков карамельных тростей длиной 4 см
+                        .component__box
+                            .star.component__star-3
+                                img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                            .star.component__star-4
+                                img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="61" height="70")
+                            .component__img
+                                picture
+                                    source(srcset="images/cooking/component-2.webp" type="image/webp")
+                                    img(src="images/cooking/component-2.png" alt="картинка" width="356" height="176")
+                            .component__info
+                                h3.component__title Для украшения:
+                                ul.component__list
+                                    li Белый и золотистый декоративный сахар и мелкие шоколадные конфеты, покрытые нонпарель, например, Sno-Caps
+                                    li Кондитерский мешок или полиэтиленовый пакет с зиплоком
+                        .component__box
+                            .component__img
+                                picture
+                                    source(srcset="images/cooking/component-3.webp" type="image/webp")
+                                    img(src="images/cooking/component-3.png" alt="картинка" width="356" height="176")
+                            .component__info
+                                h3.component__title Для крема:
+                                ul.component__list
+                                    li 1 ст. сахарной пудры
+                                    li 55 гр. (4 ст. л.) несолёного сливочного масла, комнатной температуры
+                                    li Щепотка мелкой соли
+                                    li 0,5 ч. л. ванильного экстракта
+                                    li 1/4-0,5 ст. л. цельного молока
+                                    li 24 капли зелёного пищевого красителя
+                                    li 1 капля красного пищевого красителя
+                    p.cooking__wishes.text.
+                        Запаслись продуктами? Тогда пора начинать! #[br]
+                        Включайте видео и готовьте вместе с МТС.
+
+        .gifts.gifts--cooking
+            .star.gifts__star-1
+                img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="128" height="147")
+                img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="128" height="147")
+            .star.gifts__star-2
+                img.star__gold(src="images/stars/star-gold.svg", alt="звездочка" width="42" height="48")
+                img.star__blue(src="images/stars/star-blue.svg", alt="звездочка" width="42" height="48")
+            .gifts__img
+                picture
+                    source(srcset="images/gifts/gifts-mob.webp" media="(max-width: 460px)" type="image/webp")
+                    source(srcset="images/gifts/gifts-mob.png" media="(max-width: 460px)" type="image/png")
+                    source(srcset="images/gifts/gifts-1280.webp" media="(max-width: 1279px)" type="image/webp")
+                    source(srcset="images/gifts/gifts-1280.png" media="(max-width: 1279px)" type="image/png")
+                    source(srcset="images/gifts/gifts.webp" type="image/webp")
+                    img(src="images/gifts/gifts.png" alt="подарки" width="1920" height="330")

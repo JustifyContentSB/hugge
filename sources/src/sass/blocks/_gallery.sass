@@ -98,6 +98,25 @@
       left: -45px
    &__next
       right: -45px
+   &__bottom
+      margin-top: 43px
+      text-align: center
+   &__manual
+      min-width: 323px
+      min-height: 58px
+      padding-left: 40px
+      padding-top: 2px
+      display: inline-flex
+      justify-content: center
+      align-items: center
+      color: var(--textColor)
+      font-weight: 500
+      background-image: url('../images/icons/gallery-btn-hover.svg')
+      background: url('../images/icons/gallery-btn.svg') no-repeat center / 100% 100%
+      &:hover,
+      &:focus
+         background-image: url('../images/icons/gallery-btn-hover.svg')
+         color: var(--titleColor)
 
 @media screen and (max-width: 1000px)
    .gallery
@@ -116,6 +135,8 @@
       &__title
          font-size: 36px
          margin-bottom: 20px
+      &__bottom
+         margin-top: 32px
 
 @media screen and (max-width: 599px)
    .gallery
@@ -134,3 +155,10 @@
          left: 13px
          &::after
             content: 'next'
+
+@media screen and (max-width: 360px)
+   .gallery
+      &__bottom
+         padding: 0 16px
+      &__manual
+         min-width: 100%

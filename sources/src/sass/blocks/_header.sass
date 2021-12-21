@@ -4,10 +4,12 @@
     position: relative
     z-index: 1000
     &__left
+        width: 500px
         position: absolute
         top: 0
         left: 0
     &__right
+        width: 500px
         position: absolute
         top: 0
         right: 0
@@ -121,22 +123,28 @@
         position: absolute
         right: 22px
         top: -20px
+    &--recipe
+        margin-bottom: 40px
+        .header
+            &__blockquote
+                &-cite
+                    margin-bottom: 18px
 
 @media screen and (max-width: 1800px)
     .header
-        &__left
-            width: 500px
-        &__right
-            width: 500px
         &__toy
+            width: 400px
+        &__left
+            width: 400px
+        &__right
             width: 400px
 
 @media screen and (max-width: 1600px)
     .header
         &__left
-            width: 400px
+            width: 300px
         &__right
-            width: 400px
+            width: 300px
         &__toy
             width: 300px
         &--stream
@@ -150,12 +158,19 @@
             width: 400px
             left: 0
 
+@media screen and (max-width: 1439px)
+    .header
+        &__left
+            width: 220px
+        &__right
+            width: 220px
+
 @media screen and (max-width: 1279px)
     .header
         &__left
-            width: 250px
+            width: 150px
         &__right
-            width: 250px
+            width: 150px
         &__mts
             max-width: 150px
             margin-bottom: 30px
@@ -169,10 +184,6 @@
 
 @media screen and (max-width: 1100px)
     .header
-        &__left
-            width: 150px
-        &__right
-            width: 150px
         &__toy
             display: none
         &__menu
@@ -308,6 +319,8 @@
                 font-size: 14px
         &__close
             top: 0
+        &--recipe
+            margin-bottom: 0
 
 @media screen and (max-width: 500px)
     .header

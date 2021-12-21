@@ -106,6 +106,39 @@
          right: 8%
       &-8, &-9
          display: none
+   &__box
+      position: relative
+   &__cake
+      position: absolute
+      right: -100px
+      top: -200px
+   &--recipe
+      .cooking
+         &__star
+            &-2
+               left: 3%
+            &-3
+               left: 10%
+               bottom: -2%
+            &-4
+               bottom: -2%
+            &-5
+               right: 50%
+            &-6
+               bottom: auto
+               top: -10%
+               right: 20%
+            &-7
+               top: -2%
+         &__title
+            margin-bottom: 36px
+            text-align: center
+         &__today
+            margin: auto
+            margin-top: 50px
+            font-size: 18px
+            line-height: 180%
+            text-align: center
 
 @media screen and (max-width: 1700px)
    .cooking
@@ -117,12 +150,19 @@
          &-7
             width: 70px
             right: 3%
+      &__cake
+         right: 0
 
 @media screen and (max-width: 1365px)
    .cooking
       &__star
          &-7
             display: none
+      &--recipe
+         .cooking
+            &__star
+               &-5
+                  display: none
 
 @media screen and (max-width: 1200px)
    .cooking
@@ -141,6 +181,28 @@
       &__star
          &-6
             display: none
+      &__cake
+         display: none
+      &--recipe
+         .cooking
+            &__top
+               flex-direction: column
+            &__video
+               order: 1
+            &__title
+               margin-bottom: 20px
+               text-align: left
+            &__info
+               padding-top: 0
+               margin-bottom: 30px
+            &__today
+               width: 100%
+               max-width: 100%
+               margin: 0
+               margin-bottom: 40px
+               text-align: left
+               font-size: 16px
+               line-height: 150%
 
 @media screen and (max-width: 1000px)
    .cooking
@@ -195,6 +257,12 @@
             &__zoom
                width: 16px
                height: 16px
+      &--recipe
+         .cooking
+            &__title
+               margin-bottom: 10px
+            &__today
+               font-size: 14px
 
 @media screen and (max-width: 460px)
    .cooking

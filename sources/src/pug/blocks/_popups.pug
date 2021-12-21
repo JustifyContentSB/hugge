@@ -1,0 +1,89 @@
+.send
+   .send__modal
+      .send__inner
+         a.send__close(href="#")
+            span
+            span
+         .send__header
+            h2.send__title Заполните форму и пришлите свою работу через: Telegram, email.
+            ul.send__soc
+               li.send__soc-item
+                  a.send__soc-link(href="#")
+                     img(src="images/icons/tg.svg" alt="телеграм" width="60" height="60")
+               li.send__soc-item
+                  a.send__soc-link(href="#")
+                     img(src="images/icons/gmail.svg" alt="гмэйл" width="60" height="60")
+         form.send__form(action="#")
+            .send__content
+               .send__info
+                  .send__inputs
+                     label.send__label
+                        input.send__field(type="text" placeholder="Имя")
+                     label.send__label
+                        input.send__field(type="text" placeholder="Фамилия")
+                     label.send__label
+                        input.send__field(type="text" placeholder="Город")
+                  textarea.send__textarea.send__textarea-desk(name="textarea" cols="30" rows="10" placeholder="Описание фотографии, рецепта..")
+               .send__manage
+                  .send__choose
+                     label.send__choose-label
+                        input(type="radio" name="choose")
+                        span.send__choose-radio
+                        span.send__choose-text Сервировка новогоднего стола в стиле Хюгге
+                     label.send__choose-label
+                        input(type="radio" name="choose" checked)
+                        span.send__choose-radio
+                        span.send__choose-text Новогодний десерт в стиле Хюгге
+                     label.send__choose-label
+                        input(type="radio" name="choose")
+                        span.send__choose-radio
+                        span.send__choose-text Упаковка новогоднего подарка в стиле Хюгге
+                     label.send__choose-label
+                        input(type="radio" name="choose")
+                        span.send__choose-radio
+                        span.send__choose-text Украшение новогодней елки в стиле Хюгге
+                  .send__download
+                     label.send__download-label
+                        input(type="file")
+                        span.send__download-text Загрузить фото
+                     p.send__download-warning.
+                        не более #[br] 50 MB
+                  textarea.send__textarea.send__textarea-mob(name="textarea" cols="30" rows="10" placeholder="Описание фотографии, рецепта..")
+            button.send__btn Отправить
+
+.notice
+   .notice__inner
+      a.close.notice__close(href="#")
+         span
+         span
+      p.notice__text.
+         Время и так быстро летит, не стоит торопиться. Совсем скоро это окошко откроется!
+      span.notice__no.notice__no-1 Ho
+      span.notice__no.notice__no-2 Ho
+      span.notice__no.notice__no-3 Ho
+      img.notice__santa(src="images/notice/santa.svg" alt="санта" width="386" height="398")
+      img.notice__branch-1(src="images/notice/branch-1.svg" alt="ветка" width="316" height="307")
+      img.notice__branch-2(src="images/notice/branch-2.svg" alt="ветка" width="244" height="250")
+      img.notice__branch-3(src="images/notice/branch-3.svg" alt="ветка" width="170" height="170")
+
+.voting(style="display: none;")
+   .voting__inner
+      a.voting__close(href="#")
+         img(src="images/icons/close-blue.svg" alt="закрыть" width="30" height="30")
+      .voting__top
+         .voting__qr
+            img(src="images/voting/qr.png" alt="qr-код" width="200" height="198")
+         .voting__info
+            h2.voting__title Чтобы проголосовать за понравившуюся работу вам необходимо:
+            ol.voting__list
+               li Отключится от офисного wi-fi и перейти на мобильные данные своего сотового.
+               li Отсканировать QR-код.
+               li Проголосовать за работу.
+      .voting__section
+         p.voting__title Почему так?
+         p.voting__text.
+            У нас в офисе единый ip-адрес, это значит, что для системы распознавания лайков, мы все как один человек, а значит, что и лайк от нас всех автоматически один. Поэтому вы сейчас можете видеть, что под фотографиями горят красные сердечки. Если вы зайдете на сайт со своего домашнего компьютера или ноутбука, или используете свой телефон, то ваш ip-адрес будет определен отдельно, и система поймет, что вы оставили свой голос за эту конкретную работу.
+      p.voting__about.
+         Большое спасибо, что голосуете по инструкции. #[br]
+         Это поможет нам подвести честные итоги голосования по работам.
+      img.voting__bell(src="images/voting/bell.png" alt="колокольчик" width="201" height="212")

@@ -29,11 +29,11 @@
         <div class="header__menu"><a class="header__mts" href="#"><img src="images/icons/mts.svg" alt="мтс" width="206" height="51"></a>
           <nav class="header__nav">
             <ul class="header__list">
-              <li><a class="header__link" href="#">Адвент-календарь</a></li>
-              <li><a class="header__link" href="#">Галерея работ</a></li>
-              <li><a class="header__link header__link--active" href="#">ПРО100 к 1</a></li>
-              <li><a class="header__link" href="#">Подборка настроения</a></li>
-              <li><a class="header__link" href="#">Трансляция </a></li>
+              <li><a class="header__link" href="index.html">Адвент-календарь</a></li>
+              <li><a class="header__link" href="gallery.html">Галерея работ</a></li>
+              <li><a class="header__link header__link--active">ПРО100 к 1</a></li>
+              <li><a class="header__link" href="mood.html">Подборка настроения</a></li>
+              <li><a class="header__link" href="stream.html">Трансляция</a></li>
             </ul>
           </nav>
         </div>
@@ -692,7 +692,7 @@
         </picture>
       </div>
     </div>
-    <div class="send" style="display: none;">
+    <div class="send">
       <div class="send__modal">
         <div class="send__inner"><a class="send__close" href="#"><span></span><span></span></a>
           <div class="send__header">
@@ -747,9 +747,31 @@
         </div>
       </div>
     </div>
-    <div class="notice" style="display: none;">
+    <div class="notice">
       <div class="notice__inner"><a class="close notice__close" href="#"><span></span><span></span></a>
         <p class="notice__text">Время и так быстро летит, не стоит торопиться. Совсем скоро это окошко откроется!</p><span class="notice__no notice__no-1">Ho</span><span class="notice__no notice__no-2">Ho</span><span class="notice__no notice__no-3">Ho</span><img class="notice__santa" src="images/notice/santa.svg" alt="санта" width="386" height="398"><img class="notice__branch-1" src="images/notice/branch-1.svg" alt="ветка" width="316" height="307"><img class="notice__branch-2" src="images/notice/branch-2.svg" alt="ветка" width="244" height="250"><img class="notice__branch-3" src="images/notice/branch-3.svg" alt="ветка" width="170" height="170">
+      </div>
+    </div>
+    <div class="voting" style="display: none;">
+      <div class="voting__inner"><a class="voting__close" href="#"><img src="images/icons/close-blue.svg" alt="закрыть" width="30" height="30"></a>
+        <div class="voting__top">
+          <div class="voting__qr"><img src="images/voting/qr.png" alt="qr-код" width="200" height="198"></div>
+          <div class="voting__info">
+            <h2 class="voting__title">Чтобы проголосовать за понравившуюся работу вам необходимо:</h2>
+            <ol class="voting__list">
+              <li>Отключится от офисного wi-fi и перейти на мобильные данные своего сотового.</li>
+              <li>Отсканировать QR-код.</li>
+              <li>Проголосовать за работу.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="voting__section">
+          <p class="voting__title">Почему так?</p>
+          <p class="voting__text">У нас в офисе единый ip-адрес, это значит, что для системы распознавания лайков, мы все как один человек, а значит, что и лайк от нас всех автоматически один. Поэтому вы сейчас можете видеть, что под фотографиями горят красные сердечки. Если вы зайдете на сайт со своего домашнего компьютера или ноутбука, или используете свой телефон, то ваш ip-адрес будет определен отдельно, и система поймет, что вы оставили свой голос за эту конкретную работу.</p>
+        </div>
+        <p class="voting__about">Большое спасибо, что голосуете по инструкции. <br>
+          Это поможет нам подвести честные итоги голосования по работам.
+        </p><img class="voting__bell" src="images/voting/bell.png" alt="колокольчик" width="201" height="212">
       </div>
     </div>
     <script src="js/main.min.js"></script>

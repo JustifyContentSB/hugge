@@ -1,0 +1,86 @@
+.voting
+   width: calc(100% - 32px)
+   max-width: 802px
+   margin: 0 auto
+   background: #FFFDF6
+   box-shadow: 0px 0px 30px rgba(180, 126, 17, 0.6)
+   border-radius: 30px
+   &__inner
+      padding: 55px 65px
+      position: relative
+      line-height: 180%
+   &__close
+      position: absolute
+      right: 20px
+      top: 10px
+   &__top
+      margin-bottom: 40px
+      display: flex
+      justify-content: space-between
+      align-items: center
+   &__qr
+      min-width: 200px
+      margin-right: 48px
+   &__info
+      width: 100%
+      max-width: 417px
+   &__title
+      font-size: 18px
+      font-weight: 500
+   &__list
+      margin: 0
+      padding: 0
+      counter-reset: myCounter
+      li
+         list-style: none
+         &::before
+            counter-increment: myCounter
+            content: counter(myCounter) '.'
+            color: var(--accent)
+            display: inline-block
+            text-align: left
+            width: 10px
+            height: 10px
+            margin-right: 5px
+   &__section
+      margin-bottom: 40px
+   &__about
+      width: 100%
+      max-width: 445px
+      font-weight: 500
+   &__bell
+      position: absolute
+      right: 20px
+      bottom: -15px
+
+@media screen and (max-width: 900px)
+   .voting
+      &__inner
+         padding-bottom: 220px
+      &__bell
+         right: 50%
+         transform: translateX(50%)
+      &__about
+         max-width: 100%
+
+@media screen and (max-width: 767px)
+   .voting
+      &__inner
+         padding: 38px 27px
+         padding-bottom: 120px
+         font-size: 14px
+         line-height: 150%
+      &__top
+         margin-bottom: 24px
+         flex-direction: column
+         align-items: flex-start
+      &__qr
+         margin-right: 0
+         margin-bottom: 24px
+      &__info
+         max-width: 100%
+      &__title
+         font-size: 16px
+      &__bell
+         width: 91px
+      
